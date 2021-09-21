@@ -102,6 +102,22 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
+          const SizedBox(height: 20.0),
+            ElevatedButton(
+              child: Text('Basics'),
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => TableBasicsExample()),
+              ),
+            ),
+          const SizedBox(height: 20.0),
+            ElevatedButton(
+              child: Text('Basics'),
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => TableBasicsExample()),
+              ),
+            ),
           ],
         ),
       ),
