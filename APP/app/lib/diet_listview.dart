@@ -8,7 +8,7 @@ class DietListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('TableCalendar - Basics'),
+        title: const Text('Diet-ListView'),
       ),
       body: ListView(
         prototypeItem: const Text("hello"),
