@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'table_cal.dart';
 import 'basic_example.dart';
+import 'diet_listview.dart';
 
 void main() {
   runApp(const MyApp());
@@ -106,7 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
-          const SizedBox(height: 20.0),
+          const SizedBox(height: 60.0),
             ElevatedButton(
               child: const Text('table_cal'),
               onPressed: () => Navigator.push(
@@ -114,7 +115,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 MaterialPageRoute(builder: (_) => const TableEventsExample()),
               ),
             ),
-          const SizedBox(height: 20.0),
+          const SizedBox(height: 60.0),
             ElevatedButton(
               child: const Text('Basics'),
               onPressed: () => Navigator.push(
@@ -122,12 +123,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 MaterialPageRoute(builder: (_) => const TableBasicsExample()),
               ),
             ),
-          const SizedBox(height: 20.0),
+          const SizedBox(height: 60.0),
             ElevatedButton(
               child: const Text('ListView'),
               onPressed: () => Navigator.push(
                 context,
-                MaterialPageRoute(builder: (_) => const TableBasicsExample()),
+                MaterialPageRoute(builder: (_) => const DietListView()),
               ),
             ),
           ],
