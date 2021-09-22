@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 import 'table_cal.dart';
 import 'basic_example.dart';
 import 'diet_listview.dart';
@@ -16,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: '급양지키미',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -27,9 +26,9 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.deepPurple,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: '급양지키미'),
     );
   }
 }
@@ -53,19 +52,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -98,48 +84,65 @@ class _MyHomePageState extends State<MyHomePage> {
           // center the children vertically; the main axis here is the vertical
           // axis because Columns are vertical (the cross axis would be
           // horizontal).
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
+            const Text('오늘의 식단'),
+            Container(
+              child: const Placeholder(),
+              color: Colors.amber[600],
+              width: 450,
+              height: 200.0,
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+            const SizedBox(
+              height: 50,
             ),
-          const SizedBox(height: 60.0),
-            ElevatedButton(
-              child: const Text('table_cal'),
-              onPressed: () => Navigator.push(
-                context,
-                MaterialPageRoute(builder: (_) => const TableEventsExample()),
+            Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+              ConstrainedBox(
+                constraints:
+                    const BoxConstraints.expand(height: 100, width: 100),
+                child: ElevatedButton(
+                  child: const Text('table_cal'),
+                  onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (_) => const TableEventsExample()),
+                  ),
+                ),
               ),
-            ),
-          const SizedBox(height: 60.0),
-            ElevatedButton(
-              child: const Text('Basics'),
-              onPressed: () => Navigator.push(
-                context,
-                MaterialPageRoute(builder: (_) => const TableBasicsExample()),
+              const SizedBox(
+                width: 10,
               ),
-            ),
-          const SizedBox(height: 60.0),
-            ElevatedButton(
-              child: const Text('ListView'),
-              onPressed: () => Navigator.push(
-                context,
-                MaterialPageRoute(builder: (_) => const DietListView()),
+              ConstrainedBox(
+                constraints:
+                    const BoxConstraints.expand(height: 100, width: 100),
+                child: ElevatedButton(
+                  child: const Text('Basics'),
+                  onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (_) => const TableBasicsExample()),
+                  ),
+                ),
               ),
-            ),
+              const SizedBox(
+                width: 10,
+              ),
+              ConstrainedBox(
+                constraints:
+                    const BoxConstraints.expand(height: 100, width: 100),
+                child: ElevatedButton(
+                  child: const Text('ListView'),
+                  onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => const DietListView()),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 60),
+            ])
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
-
