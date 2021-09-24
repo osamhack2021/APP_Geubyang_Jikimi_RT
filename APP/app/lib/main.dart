@@ -100,7 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   launchBrowser("http://poisonmap.mfds.go.kr/");
                 });
               },
-              child: Column(
+              child: Row(
                 children: const <Widget>[Icon(Icons.link), Text("식중독 지수 예보!")],
               )),
             const Text('오늘의 식단'),
