@@ -1,5 +1,6 @@
 # RT (Rice_Thieves)
 밥도둑
+![Logo](자료/팀로고.PNG)
 
 
 # Geubyang_Jikimi
