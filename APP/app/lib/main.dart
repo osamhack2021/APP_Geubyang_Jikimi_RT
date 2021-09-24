@@ -1,5 +1,8 @@
+// import packages
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
+// import modules
 import 'table_cal.dart';
 import 'basic_example.dart';
 import 'diet_listview.dart';
@@ -52,6 +55,12 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  launchBrowser(String url) async {
+    if (await canLaunch(url)) {
+      await launch(url, forceSafariVC: false, forceWebView: false);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -86,6 +95,14 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
+            TextButton(onPressed: () {
+                setState(() {
+                  launchBrowser("http://poisonmap.mfds.go.kr/");
+                });
+              },
+              child: Column(
+                children: const <Widget>[Icon(Icons.link), Text("식중독 지수 예보!")],
+              )),
             const Text('오늘의 식단'),
             Container(
               child: const Placeholder(),
