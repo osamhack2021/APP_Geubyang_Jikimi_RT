@@ -9,7 +9,11 @@ class MyApp extends StatefulWidget {
   _MyAppState createState() => _MyAppState();  
 }  
   
-class _MyAppState extends State<MyApp> {  
+class _MyAppState extends State<MyApp> {
+  get ind => null;
+
+  get rounded => null;
+  
   @override  
   Widget build(BuildContext context) {  
     return MaterialApp(  
@@ -30,14 +34,16 @@ class _MyAppState extends State<MyApp> {
                  accountEmail: Text('morivi@morivi.com'),
                  ),
                  ListTile(
-                   leading: Icon(Icons.home,
+                   leading: Icon(Icons.person_sharp,
                    color: Colors.grey[850],
                    ),
-                   title: Text('Home'),
+                   title: Text('마이페이지'),
                    onTap: (){
-                     print('Home is clicked');
+                     print('마이페이지 is clicked');
                    },
-                   trailing: Icon(Icons.add),
+                   trailing: Icon(Icons.arrow_forward_ios_rounded,
+                   color: Colors.grey[850],
+                   ),
                  )
                  
                ],
