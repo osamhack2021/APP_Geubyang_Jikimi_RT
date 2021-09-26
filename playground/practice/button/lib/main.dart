@@ -28,6 +28,16 @@ class _MyAppState extends State<MyApp> {
                  ),
                  accountName: Text('Morivi'),
                  accountEmail: Text('morivi@morivi.com'),
+                 ),
+                 ListTile(
+                   leading: Icon(Icons.home,
+                   color: Colors.grey[850],
+                   ),
+                   title: Text('Home'),
+                   onTap: (){
+                     print('Home is clicked');
+                   },
+                   trailing: Icon(Icons.add),
                  )
                  
                ],
