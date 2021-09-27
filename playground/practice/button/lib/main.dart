@@ -50,7 +50,7 @@ class _MyAppState extends State<MyApp> {
                ),
           ),
           body: Center (
-            child: Row (
+            child: Column (
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[  
             Container( 
@@ -72,7 +72,25 @@ class _MyAppState extends State<MyApp> {
                 textColor: Colors.white,   
                 onPressed: () {},  
               ),  
+            ),
+            Container(  
+              margin: EdgeInsets.all(25),  
+              child: FlatButton(  
+                child: Text('급식 만족도조사2', style: TextStyle(fontSize: 20.0),),
+                color: Colors.blueAccent,  
+                textColor: Colors.white,   
+                onPressed: () {},  
+              ),  
             ),  
+            Container(  
+              margin: EdgeInsets.all(25),  
+              child: FlatButton(  
+                child: Text('급식 만족도조사3', style: TextStyle(fontSize: 20.0),),
+                color: Colors.blueAccent,  
+                textColor: Colors.white,   
+                onPressed: () {},  
+              ),  
+            ),    
           ]  
          ))  
       ),  

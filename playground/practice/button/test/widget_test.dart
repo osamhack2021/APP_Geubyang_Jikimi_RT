@@ -1,30 +1,35 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility that Flutter provides. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
+class GridviewPage extends StatefulWidget {
+  const GridviewPage({Key? key}) : super(key: key);
 
-import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
+  @override
+  _GridviewPageState createState() => _GridviewPageState();
+}
 
-import 'package:button/main.dart';
-
-void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
-
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
-
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
-
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
-  });
+class _GridviewPageState extends State<GridviewPage> {
+  @override
+  Widget build(BuildContext context) {
+    return new MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('GridviewPage'),
+        ),
+        body: GridView.builder(
+          itemCount: 4, //item 개수
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2, //1 개의 행에 보여줄 item 개수
+            childAspectRatio: 1 / 1, //item 의 가로 1, 세로 2 의 비율
+            mainAxisSpacing: 10, //수평 Padding
+            crossAxisSpacing: 10, //수직 Padding
+          ),
+          itemBuilder: (BuildContext context, int index) {
+            //item 의 반목문 항목 형성
+            return Container(
+              color: Colors.lightGreen,
+              child: Text(' Item : $index'),
+            );
+          },
+        ),
+      ),
+    );
+  }
 }
