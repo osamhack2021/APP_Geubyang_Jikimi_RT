@@ -23,7 +23,9 @@ class MyApp extends StatelessWidget {
           children: List.generate(4, (Button) {
             return Center(
               
-              
+              width: 60,
+              height: 100,
+              margin: EdgeInsets.all(25),
               child: FlatButton(  
                 child: Text('표준식단', style: TextStyle(fontSize: 20.0),),
                 color: Colors.blueAccent,  
