@@ -20,11 +20,17 @@ class MyApp extends StatelessWidget {
           // horizontal, this produces 2 rows.
           crossAxisCount: 2,
           // Generate 100 widgets that display their index in the List.
-          children: List.generate(100, (index) {
+          children: List.generate(4, (Button) {
             return Center(
-              child: Text(
-                'Item $index',
-                style: Theme.of(context).textTheme.headline5,
+              
+              
+              child: FlatButton(  
+                child: Text('표준식단', style: TextStyle(fontSize: 20.0),),
+                color: Colors.blueAccent,  
+                textColor: Colors.white,   
+                onPressed: () {},  
+              
+              
               ),
             );
           }),
