@@ -44,55 +44,70 @@ class _MyAppState extends State<MyApp> {
                    trailing: Icon(Icons.arrow_forward_ios_rounded,
                    color: Colors.grey[850],
                    ),
-                 )
+                 ),
+                 ListTile(
+                   leading: Icon(Icons.rule_outlined,
+                   color: Colors.grey[850],
+                   ),
+                   title: Text('창고정리'),
+                   onTap: (){
+                     print('창고정리 is clicked');
+                   },
+                   trailing: Icon(Icons.arrow_forward_ios_rounded,
+                   color: Colors.grey[850],
+                   ),
+                 ),
+                 ListTile(
+                   leading: Icon(Icons.qr_code_scanner_rounded,
+                   color: Colors.grey[850],
+                   ),
+                   title: Text('QR코드 스캔'),
+                   onTap: (){
+                     print('QR코드 스캔 is clicked');
+                   },
+                   trailing: Icon(Icons.arrow_forward_ios_rounded,
+                   color: Colors.grey[850],
+                   ),
+                 ),
+                 ListTile(
+                   leading: Icon(Icons.logout_rounded,
+                   color: Colors.grey[850],
+                   ),
+                   title: Text('로그아웃'),
+                   onTap: (){
+                     print('로그아웃 is clicked');
+                   },
+                   trailing: Icon(Icons.arrow_forward_ios_rounded,
+                   color: Colors.grey[850],
+                   ),
+                 ),
                  
                ],
                ),
           ),
-          body: Center (
-            child: Column (
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[  
-            Container( 
-              width: 60,
-              height: 100,
-              margin: EdgeInsets.all(25),  
+          body: GridView.count(
+          // Create a grid with 2 columns. If you change the scrollDirection to
+          // horizontal, this produces 2 rows.
+          crossAxisCount: 2,
+          // Generate 100 widgets that display their index in the List.
+          children: List.generate(4, (Button) {
+            return Center(
+              
+          
+             
               child: FlatButton(  
+                height: 80,
+                minWidth: 90,
                 child: Text('표준식단', style: TextStyle(fontSize: 20.0),),
                 color: Colors.blueAccent,  
                 textColor: Colors.white,   
                 onPressed: () {},  
-              ),  
-            ),  
-            Container(  
-              margin: EdgeInsets.all(25),  
-              child: FlatButton(  
-                child: Text('급식 만족도조사', style: TextStyle(fontSize: 20.0),),
-                color: Colors.blueAccent,  
-                textColor: Colors.white,   
-                onPressed: () {},  
-              ),  
-            ),
-            Container(  
-              margin: EdgeInsets.all(25),  
-              child: FlatButton(  
-                child: Text('급식 만족도조사2', style: TextStyle(fontSize: 20.0),),
-                color: Colors.blueAccent,  
-                textColor: Colors.white,   
-                onPressed: () {},  
-              ),  
-            ),  
-            Container(  
-              margin: EdgeInsets.all(25),  
-              child: FlatButton(  
-                child: Text('급식 만족도조사3', style: TextStyle(fontSize: 20.0),),
-                color: Colors.blueAccent,  
-                textColor: Colors.white,   
-                onPressed: () {},  
-              ),  
-            ),    
-          ]  
-         ))  
+              
+              
+              ),
+            );
+          }),
+        ),
       ),  
     );  
   }  
