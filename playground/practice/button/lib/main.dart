@@ -13,6 +13,8 @@ class _MyAppState extends State<MyApp> {
   get ind => null;
 
   get rounded => null;
+
+  get countValue => null;
   
   @override  
   Widget build(BuildContext context) {  
@@ -85,30 +87,70 @@ class _MyAppState extends State<MyApp> {
                ],
                ),
           ),
-          body: GridView.count(
-          // Create a grid with 2 columns. If you change the scrollDirection to
-          // horizontal, this produces 2 rows.
-          crossAxisCount: 2,
-          // Generate 100 widgets that display their index in the List.
-          children: List.generate(4, (Button) {
-            return Center(
-              
-          
-             
-              child: FlatButton(  
-                height: 80,
-                minWidth: 90,
-                child: Text('표준식단', style: TextStyle(fontSize: 20.0),),
-                color: Colors.blueAccent,  
-                textColor: Colors.white,   
-                onPressed: () {},  
-              
-              
-              ),
-            );
-          }),
-        ),
-      ),  
-    );  
+            body: Column(children: [
+          Expanded(
+            child: GridView.count(
+              crossAxisCount: 2,
+              mainAxisSpacing: 35.0,
+              crossAxisSpacing: 35.0,
+              padding: const EdgeInsets.fromLTRB(20.0, 40.0, 40.0, 20.0),
+              childAspectRatio: 1/1,
+              children: <Widget>[
+                  
+                  
+                  TextButton(
+                   style: TextButton.styleFrom(
+                     backgroundColor: Colors.blueAccent,
+                     primary: Colors.black
+                   ),
+                  
+                  child: Text('표준식단',
+                      style: TextStyle(fontSize:50)),
+                  onPressed: (){}
+                  ),
+                  TextButton(
+                    style: TextButton.styleFrom(
+                     backgroundColor: Colors.blueAccent,
+                     primary: Colors.black
+                   ),
+                  child: Text('급식 만족도조사',
+                      style: TextStyle(fontSize: 50)),
+                  onPressed: (){}
+                  ),
+                 
+                  TextButton(
+                    style: TextButton.styleFrom(
+                     backgroundColor: Colors.blueAccent,
+                     primary: Colors.black
+                   ),
+                  child: Text('응원의 말',
+                      style: TextStyle(fontSize: 50)),
+                  onPressed: (){}
+                  ),
+                  TextButton(
+                    style: TextButton.styleFrom(
+                     backgroundColor: Colors.blueAccent,
+                     primary: Colors.black
+                   ),
+                  child: Text('레시피',
+                      style: TextStyle(fontSize: 50)),
+                  onPressed: (){}
+                  ),
+                  TextButton(
+                    style: TextButton.styleFrom(
+                     backgroundColor: Colors.blueAccent,
+                     primary: Colors.black
+                   ),
+                  child: Text('브런치데이 의견 종합',
+                      style: TextStyle(fontSize: 50)),
+                  onPressed: (){}
+                  )
+              ],
+                ),   
+                ),
+            ],
+            ),  
+    
+    ));  
   }  
 }  
