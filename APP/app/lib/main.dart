@@ -6,6 +6,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'table_cal.dart';
 import 'basic_example.dart';
 import 'diet_listview.dart';
+import 'fetch_data_from_interenet_example.dart';
 
 void main() {
   runApp(const MyApp());
@@ -158,7 +159,18 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               const SizedBox(height: 60),
-            ])
+              ConstrainedBox(
+                constraints:
+                    const BoxConstraints.expand(height: 100, width: 100),
+                child: ElevatedButton(
+                  child: const Text('ListView'),
+                  onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => const HttpAlbum()),
+                  ),
+                ),
+              ),
+            ]),
           ],
         ),
       ), // This trailing comma makes auto-formatting nicer for build methods.
