@@ -1,4 +1,4 @@
-name: app
+name: flutterfiretest
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -29,24 +29,16 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  table_calendar: ^3.0.2
-  json_annotation: ^4.1.0
-  url_launcher: ^6.0.12
-  http: ^0.13.3
   firebase_core: "^1.6.0"
-  cloud_firestore: ^2.0.0
 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
 
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  build_runner: ^2.0.0
-  json_serializable: ^5.0.0
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

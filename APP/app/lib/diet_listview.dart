@@ -67,7 +67,7 @@ class _DietListViewState extends State<DietListView> {
                 if (snapshot.hasData) {
                   return Text(snapshot.data!.brft);
                 } else if (snapshot.hasError) {
-                  return Text('${snapshot.error}');
+                  return Text('${snapshot.error} adfasdf');
                 }
 
                 return const CircularProgressIndicator();
