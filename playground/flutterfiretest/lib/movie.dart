@@ -6,7 +6,7 @@ import 'package:flutter/foundation.dart';
 
 @immutable
 class Movie {
-  Movie({
+  const Movie({
     required this.genre,
     required this.likes,
     required this.poster,
