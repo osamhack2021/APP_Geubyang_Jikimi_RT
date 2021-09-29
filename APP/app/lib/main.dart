@@ -1,10 +1,11 @@
 // import packages
+import 'package:app/diet_daily.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 // import modules
-import 'table_cal.dart';
-import 'basic_example.dart';
+import 'table_cal_examples/table_cal.dart';
+import 'table_cal_examples/basic_example.dart';
 import 'diet_listview.dart';
 import 'fetch_data_from_interenet_example.dart';
 
@@ -163,8 +164,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: const Text('표준식단', style: TextStyle(fontSize: 50)),
                     onPressed: () => Navigator.push(
                       context,
-                      MaterialPageRoute(
-                          builder: (_) => const TableEventsExample()),
+                      MaterialPageRoute(builder: (_) => const DietCalendarDaily()),
                     ),
                   ),
                   TextButton(
@@ -175,7 +175,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         const Text('급식 만족도조사', style: TextStyle(fontSize: 50)),
                     onPressed: () => Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (_) => const HttpAlbum()),
+                      MaterialPageRoute(builder: (_) => const DietListView()),
                     ),
                   ),
                   TextButton(
@@ -195,7 +195,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: const Text('레시피', style: TextStyle(fontSize: 50)),
                     onPressed: () => Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (_) => const HttpAlbum()),
+                      MaterialPageRoute(
+                          builder: (_) => const TableEventsExample()),
                     ),
                   ),
                   TextButton(
@@ -206,7 +207,8 @@ class _MyHomePageState extends State<MyHomePage> {
                         style: TextStyle(fontSize: 50)),
                     onPressed: () => Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (_) => const HttpAlbum()),
+                      MaterialPageRoute(
+                          builder: (_) => const TableBasicsExample()),
                     ),
                   )
                 ],
