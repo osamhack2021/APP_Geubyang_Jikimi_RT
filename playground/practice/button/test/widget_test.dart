@@ -1,35 +1,38 @@
-class GridviewPage extends StatefulWidget {
-  const GridviewPage({Key? key}) : super(key: key);
+import 'package:flutter/material.dart';  
+  
+void main() {  
+  runApp(MyApp());  
+}  
+  
+class MyApp extends StatefulWidget {  
+  @override  
+  _MyAppState createState() => _MyAppState();  
+}  
+  
+class _MyAppState extends State<MyApp> {
+  get ind => null;
 
-  @override
-  _GridviewPageState createState() => _GridviewPageState();
-}
+  get rounded => null;
 
-class _GridviewPageState extends State<GridviewPage> {
-  @override
-  Widget build(BuildContext context) {
-    return new MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('GridviewPage'),
-        ),
-        body: GridView.builder(
-          itemCount: 4, //item 개수
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2, //1 개의 행에 보여줄 item 개수
-            childAspectRatio: 1 / 1, //item 의 가로 1, 세로 2 의 비율
-            mainAxisSpacing: 10, //수평 Padding
-            crossAxisSpacing: 10, //수직 Padding
-          ),
-          itemBuilder: (BuildContext context, int index) {
-            //item 의 반목문 항목 형성
-            return Container(
-              color: Colors.lightGreen,
-              child: Text(' Item : $index'),
-            );
-          },
-        ),
-      ),
-    );
-  }
-}
+  get countValue => null;
+  
+  @override  
+  Widget build(BuildContext context) {  
+    return MaterialApp(  
+      home: Scaffold(  
+          appBar: AppBar(  
+            title: Text('급양지키미'), 
+            actions:<Widget>[
+              IconButton(
+                icon: Icon(Icons.arrow_back_ios_new_rounded),
+                onPressed: () {},
+              ),
+              IconButton(
+                icon: Icon(Icons.arrow_forward_ios_rounded),
+                onPressed: () {},
+              )
+            ]
+                      ),  
+                       ));  
+  }  
+}  
