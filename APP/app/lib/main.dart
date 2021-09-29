@@ -164,11 +164,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: const Text('표준식단', style: TextStyle(fontSize: 50)),
                     onPressed: () => Navigator.push(
                       context,
-<<<<<<< HEAD
-                      MaterialPageRoute(builder: (_) => const DietCalendarDaily()),
-=======
                       MaterialPageRoute(builder: (_) => const DietListView()),
->>>>>>> 831d4ca25ffee8376da288d823200901e8c6ae60
                     ),
                   ),
                   TextButton(
