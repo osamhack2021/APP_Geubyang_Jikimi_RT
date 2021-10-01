@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class CustomTextButton extends StatelessWidget {
   final String text;
-  final Function pageRoute;
+  final pageRoute;
 
   const CustomTextButton({required this.text, required this.pageRoute});
 
@@ -12,6 +12,6 @@ class CustomTextButton extends StatelessWidget {
         style: TextButton.styleFrom(
             backgroundColor: Colors.blueAccent, primary: Colors.black),
         child: Text(text, style: const TextStyle(fontSize: 50)),
-        onPressed: pageRoute());
+        onPressed: pageRoute);
   }
 }

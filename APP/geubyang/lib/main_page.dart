@@ -117,16 +117,12 @@ class _MainPageState extends State<MainPage> {
                   ],
                 )),
             const Text('오늘의 식단'),
-            Padding(
-              padding: const EdgeInsets.all(15.0),
-              child: Container(
-                child: const Placeholder(
-                  fallbackHeight: 200,
-                ),
-                color: Colors.amber[600],
-              ),
-            ),
-            // provider 
+            DataTable(columns: const [
+              DataColumn(label: Text('조식')),
+            ], rows: const [
+              DataRow(cells: [DataCell(Text('밥'))]),
+            ]),
+            // provider
             const SizedBox(
               height: 50,
             ),
@@ -139,11 +135,12 @@ class _MainPageState extends State<MainPage> {
                 childAspectRatio: 1 / 1,
                 children: <Widget>[
                   CustomTextButton(
-                      text: '표준식단',
-                      pageRoute: () => Get.to(const DietTableListView())),
+                    text: '표준식단',
+                    pageRoute: () => Get.to(const DietTableMonthly()),
+                  ),
                   CustomTextButton(
                     text: '급식만족도조사',
-                    pageRoute: () => Get.to(const DietTableMonthly()),
+                    pageRoute: () => Get.to(const DietTableListView()),
                   ),
                   CustomTextButton(
                     text: '응원의 말',

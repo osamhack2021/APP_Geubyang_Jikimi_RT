@@ -6,13 +6,17 @@ import 'dart:async';
 
 import 'diet.dart';
 
-Future<Diet> fetchDiet() async {
+Future<List<Diet>> fetchDiet() async {
   final response = await http.get(Uri.parse(
-      'https://openapi.mnd.go.kr/sample/json/DS_TB_MNDT_DATEBYMLSVC/1/5/'));
+      'https://openapi.mnd.go.kr/3331313632303337343131363432313034/json/DS_TB_MNDT_DATEBYMLSVC/1/5/'));
 
   if (response.statusCode == 200) {
-    return Diet.fromjson(jsonDecode(response.body));
+    List list = jsonDecode(response.body)['DS_TB_MNDT_DATEBYMLSVC']['row'];
+
+    List<Diet> diets = list.map((e) => Diet.fromjson(e)).toList();
+    return diets;
   } else {
+    print(Error);
     throw Exception('Failed');
   }
 }
@@ -25,12 +29,21 @@ class DietTableListView extends StatefulWidget {
 }
 
 class _DietListViewState extends State<DietTableListView> {
-  late Future<Diet> futureDiet;
+  late Future<List<Diet>> futureDiet;
 
   @override
   void initState() {
     super.initState();
     futureDiet = fetchDiet();
+  }
+
+  Widget _buildListItem(Diet diet) {
+    return ListView(children: [
+      Text(diet.dates),
+      Text(diet.brst),
+      Text(diet.lunc),
+      Text(diet.dinr),
+    ]);
   }
 
   @override
@@ -40,11 +53,16 @@ class _DietListViewState extends State<DietTableListView> {
           title: const Text('표준식단'),
         ),
         body: Center(
-          child: FutureBuilder<Diet>(
+          child: FutureBuilder<List<Diet>>(
               future: futureDiet,
               builder: (context, snapshot) {
                 if (snapshot.hasData) {
-                  return Text(snapshot.data!.brft);
+                  return ListView.builder(
+                    itemCount: snapshot.data!.length,
+                    itemBuilder: (BuildContext context, int index) {
+                      return _buildListItem(snapshot.data![index]);
+                    },
+                  );
                 } else if (snapshot.hasError) {
                   return Text('${snapshot.error} adfasdf');
                 }
@@ -54,5 +72,3 @@ class _DietListViewState extends State<DietTableListView> {
         ));
   }
 }
-
-//
