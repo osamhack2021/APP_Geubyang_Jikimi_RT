@@ -4,28 +4,7 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'dart:async';
 
-class Diet {
-  final String dates;
-  final String brft;
-  final String lunc;
-  final String dinr;
-
-  Diet({
-    required this.dates,
-    required this.brft,
-    required this.lunc,
-    required this.dinr,
-  });
-
-  factory Diet.fromjson(Map<String, dynamic> json) {
-    return Diet(
-      dates: json['dates'],
-      brft: json['brft'],
-      lunc: json['lunc'],
-      dinr: json['dinr'],
-    );
-  }
-}
+import 'diet.dart';
 
 Future<Diet> fetchDiet() async {
   final response = await http.get(Uri.parse(
@@ -38,14 +17,14 @@ Future<Diet> fetchDiet() async {
   }
 }
 
-class DietListView extends StatefulWidget {
-  const DietListView({Key? key}) : super(key: key);
+class DietTableListView extends StatefulWidget {
+  const DietTableListView({Key? key}) : super(key: key);
 
   @override
   _DietListViewState createState() => _DietListViewState();
 }
 
-class _DietListViewState extends State<DietListView> {
+class _DietListViewState extends State<DietTableListView> {
   late Future<Diet> futureDiet;
 
   @override
@@ -58,7 +37,7 @@ class _DietListViewState extends State<DietListView> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Diet-ListView'),
+          title: const Text('표준식단'),
         ),
         body: Center(
           child: FutureBuilder<Diet>(
@@ -75,3 +54,5 @@ class _DietListViewState extends State<DietListView> {
         ));
   }
 }
+
+//
