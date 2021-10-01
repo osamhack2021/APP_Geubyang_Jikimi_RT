@@ -17,7 +17,7 @@ class _DietCalendarDailyState extends State<DietCalendarDaily> {
   DateTime _focusedDay = DateTime.now();
   DateTime? _selectedDay;
 
-@override
+  @override
   void initState() {
     super.initState();
 
@@ -50,14 +50,14 @@ class _DietCalendarDailyState extends State<DietCalendarDaily> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('표준식단_월력형'),
-      ),
-      body: Column(
-        children: [
+        appBar: AppBar(
+          title: const Text('표준식단_월력형'),
+        ),
+        body: Column(children: [
           TableCalendar<Diet>(
-            firstDay: _focusedDay,
-            lastDay: _focusedDay,
+            firstDay: kFirstDay,
+            lastDay: kLastDay,
+            selectedDayPredicate: (day) => isSameDay(_selectedDay, day),
             focusedDay: _focusedDay,
             calendarFormat: _calendarFormat,
             eventLoader: _getDietsForDay,
@@ -66,34 +66,39 @@ class _DietCalendarDailyState extends State<DietCalendarDaily> {
             onPageChanged: (focusedDay) {
               _focusedDay = focusedDay;
             },
+            availableCalendarFormats: const {
+              CalendarFormat.month: 'Month',
+            },
           ),
-          const SizedBox(height: 8.0,),
-          Expanded(child: 
-          ValueListenableBuilder<List<Diet>>(
+          const SizedBox(
+            height: 8.0,
+          ),
+          Expanded(
+              child: ValueListenableBuilder<List<Diet>>(
             valueListenable: _selectedDiets,
             builder: (context, value, _) {
-              return ListView.builder(itemCount: value.length,
-              itemBuilder: (context, index) {
-                return Container(
-                  margin: const EdgeInsets.symmetric(
-                    horizontal: 12.0,
-                    vertical: 4.0,
-                  ),
-                  decoration: BoxDecoration(
-                        border: Border.all(),
-                        borderRadius: BorderRadius.circular(12.0),
-                      ),
-                      child: ListTile(
-                        // ignore: avoid_print
-                        onTap: () => print('${value[index]}'),
-                        title: Text('${value[index]}'),
-                      ),
-                );
-              },);
+              return ListView.builder(
+                itemCount: value.length,
+                itemBuilder: (context, index) {
+                  return Container(
+                    margin: const EdgeInsets.symmetric(
+                      horizontal: 12.0,
+                      vertical: 4.0,
+                    ),
+                    decoration: BoxDecoration(
+                      border: Border.all(),
+                      borderRadius: BorderRadius.circular(12.0),
+                    ),
+                    child: ListTile(
+                      // ignore: avoid_print
+                      onTap: () => print('${value[index]}'),
+                      title: Text('${value[index]}'),
+                    ),
+                  );
+                },
+              );
             },
           )),
-        ]
-      )
-    );
+        ]));
   }
 }

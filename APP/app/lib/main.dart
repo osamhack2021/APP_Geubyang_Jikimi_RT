@@ -142,7 +142,9 @@ class _MyHomePageState extends State<MyHomePage> {
             Padding(
               padding: const EdgeInsets.all(15.0),
               child: Container(
-                child: const Placeholder(),
+                child: const Placeholder(
+                  fallbackHeight: 200,
+                ),
                 color: Colors.amber[600],
               ),
             ),
@@ -164,7 +166,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: const Text('표준식단', style: TextStyle(fontSize: 50)),
                     onPressed: () => Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (_) => const DietListView()),
+                      MaterialPageRoute(
+                          builder: (_) => const DietCalendarDaily()),
                     ),
                   ),
                   TextButton(

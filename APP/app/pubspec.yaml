@@ -33,13 +33,16 @@ dependencies:
   json_annotation: ^4.1.0
   url_launcher: ^6.0.12
   http: ^0.13.3
-  firebase_core: "^1.6.0"
+  # firebase_core: "^1.7.0"
+  # cloud_firestore: "^2.5.3"
+  # cloud_firestore_web: ^2.4.3
 
 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+
 
 
 dev_dependencies:
