@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:geubyang/diet_table_listview.dart';
 import 'package:geubyang/diet_table_monthly.dart';
+import 'package:geubyang/recipe_board.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'custom_textbutton.dart';
@@ -32,10 +33,10 @@ class _MainPageState extends State<MainPage> {
           padding: EdgeInsets.zero,
           children: <Widget>[
             const UserAccountsDrawerHeader(
-              currentAccountPicture: CircleAvatar(
-                backgroundImage: AssetImage('assets/프로젝트로고.png'),
-                backgroundColor: Colors.white,
-              ),
+              // currentAccountPicture: CircleAvatar(
+              //   backgroundImage: AssetImage('assets/프로젝트로고.png'),
+              //   backgroundColor: Colors.white,
+              // ),
               accountName: Text('Morivi'),
               accountEmail: Text('morivi@morivi.com'),
             ),
@@ -131,7 +132,7 @@ class _MainPageState extends State<MainPage> {
                 crossAxisCount: 2,
                 mainAxisSpacing: 35.0,
                 crossAxisSpacing: 35.0,
-                padding: const EdgeInsets.fromLTRB(20.0, 40.0, 40.0, 20.0),
+                padding: const EdgeInsets.fromLTRB(20.0, 40.0, 20.0, 40.0),
                 childAspectRatio: 1 / 1,
                 children: <Widget>[
                   CustomTextButton(
@@ -148,7 +149,7 @@ class _MainPageState extends State<MainPage> {
                   ),
                   CustomTextButton(
                     text: '레시피',
-                    pageRoute: () => Get.to(const DietTableListView()),
+                    pageRoute: () => Get.to(const RecipeBoardPage()),
                   ),
                 ],
               ),

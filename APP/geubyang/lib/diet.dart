@@ -1,28 +1,28 @@
 class Diet {
   final String dates;
-  final String brst;
-  final String lunc;
-  final String dinr;
+  final String breakfast;
+  final String lunch;
+  final String dinner;
 
   Diet({
     required this.dates,
-    required this.brst,
-    required this.lunc,
-    required this.dinr,
+    required this.breakfast,
+    required this.lunch,
+    required this.dinner,
   });
 
   factory Diet.fromjson(Map<String, dynamic> json) {
     try {
       return Diet(
         dates: json['dates'],
-        brst: json['brst'],
-        lunc: json['lunc'],
-        dinr: json['dinr'],
+        breakfast: json['brst'],
+        lunch: json['lunc'],
+        dinner: json['dinr'],
       );
     } catch (e) {
       print(e);
     }
 
-    return Diet(dates: 'dates', brst: 'brst', lunc: 'lunc', dinr: 'dinr');
+    return Diet(dates: 'dates', breakfast: 'brst', lunch: 'lunc', dinner: 'dinr');
   }
 }

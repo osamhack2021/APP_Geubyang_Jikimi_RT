@@ -1,0 +1,58 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "app",
+            "cwd": "APP/app",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "app (profile mode)",
+            "cwd": "APP/app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "geubyang",
+            "cwd": "APP/geubyang",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--web-port=5000",
+                "--web-enable-expression-evaluation"
+            ],
+            "deviceId": "chrome" ,
+        },
+        {
+            "name": "geubyang (profile mode)",
+            "cwd": "APP/geubyang",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile",
+            "args": [
+                "--web-port=5000",
+                "--web-enable-expression-evaluation"
+            ],
+            "deviceId": "chrome" ,
+        },
+        {
+            "name": "practice",
+            "cwd": "playground/practice",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "practice (profile mode)",
+            "cwd": "playground/practice",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        }
+    ]
+}

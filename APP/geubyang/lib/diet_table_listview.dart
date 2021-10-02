@@ -11,12 +11,12 @@ Future<List<Diet>> fetchDiet() async {
       'https://openapi.mnd.go.kr/3331313632303337343131363432313034/json/DS_TB_MNDT_DATEBYMLSVC/1/5/'));
 
   if (response.statusCode == 200) {
+    print(response.body);
     List list = jsonDecode(response.body)['DS_TB_MNDT_DATEBYMLSVC']['row'];
-
     List<Diet> diets = list.map((e) => Diet.fromjson(e)).toList();
     return diets;
   } else {
-    print(Error);
+    print('Error');
     throw Exception('Failed');
   }
 }
@@ -29,20 +29,19 @@ class DietTableListView extends StatefulWidget {
 }
 
 class _DietListViewState extends State<DietTableListView> {
-  late Future<List<Diet>> futureDiet;
+  // late Future<List<Diet>> futureDiet;
 
   @override
   void initState() {
     super.initState();
-    futureDiet = fetchDiet();
   }
 
   Widget _buildListItem(Diet diet) {
     return ListView(children: [
       Text(diet.dates),
-      Text(diet.brst),
-      Text(diet.lunc),
-      Text(diet.dinr),
+      Text(diet.breakfast),
+      Text(diet.lunch),
+      Text(diet.dinner),
     ]);
   }
 
@@ -54,7 +53,7 @@ class _DietListViewState extends State<DietTableListView> {
         ),
         body: Center(
           child: FutureBuilder<List<Diet>>(
-              future: futureDiet,
+              future: fetchDiet(),
               builder: (context, snapshot) {
                 if (snapshot.hasData) {
                   return ListView.builder(
@@ -64,7 +63,7 @@ class _DietListViewState extends State<DietTableListView> {
                     },
                   );
                 } else if (snapshot.hasError) {
-                  return Text('${snapshot.error} adfasdf');
+                  return Text('${snapshot.error}');
                 }
 
                 return const CircularProgressIndicator();

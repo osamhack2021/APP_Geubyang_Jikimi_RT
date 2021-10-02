@@ -15,11 +15,11 @@ final _kDietSource = {
   for (var item in List.generate(50, (index) => index))
     DateTime.utc(kFirstDay.year, kFirstDay.month, item * 5): List.generate(
         item % 4 + 1,
-        (index) => Diet(dates: '0', brft: '1', lunc: '2', dinr: '3'))
+        (index) => Diet(dates: '0', brst: '1', lunc: '2', dinr: '3'))
 }..addAll({
     kToday: [
-      Diet(dates: '0', brft: '1', lunc: '2', dinr: '3'),
-      Diet(dates: '0', brft: '1', lunc: '2', dinr: '3'),
+      Diet(dates: '0', brst: '1', lunc: '2', dinr: '3'),
+      Diet(dates: '0', brst: '1', lunc: '2', dinr: '3'),
     ],
   });
 
