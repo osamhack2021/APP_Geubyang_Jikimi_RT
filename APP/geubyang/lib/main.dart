@@ -1,10 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:geubyang/counts.dart';
+import 'package:provider/provider.dart';
 
 import 'main_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => Counts()),
+      ],
+      child: const MyApp(),
+  ),
+  );
 }
 
 class MyApp extends StatelessWidget {
