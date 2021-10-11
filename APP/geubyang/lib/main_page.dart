@@ -1,18 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:geubyang/buttons.dart';
-import 'package:geubyang/counter.dart';
-import 'package:geubyang/counts.dart';
 import 'package:geubyang/diet_table_listview.dart';
 import 'package:geubyang/diet_table_monthly.dart';
-<<<<<<< HEAD
 import 'package:geubyang/recipe_page/recipe_board.dart';
-=======
-import 'package:geubyang/recipe_board.dart';
-import 'package:provider/provider.dart';
->>>>>>> 38389c660c8b6ef0b7377983845992d9a5d65bb6
 import 'package:url_launcher/url_launcher.dart';
-
 import 'custom_textbutton.dart';
 
 class MainPage extends StatefulWidget {
@@ -32,9 +23,7 @@ class _MainPageState extends State<MainPage> {
 
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-        create: (BuildContext context) => Counts(),
-        child: Scaffold(
+    return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
       ),
@@ -57,8 +46,6 @@ class _MainPageState extends State<MainPage> {
                     Text("식중독 지수 예보!")
                   ],
                 )),
-                Counter(),
-                Buttons(),
             const Text('오늘의 식단'),
             DataTable(columns: const [
               DataColumn(label: Text('조식')),
@@ -99,7 +86,6 @@ class _MainPageState extends State<MainPage> {
           ],
         ),
       ), // This trailing comma makes auto-formatting nicer for build methods.
-    ),
     );
   }
 }
