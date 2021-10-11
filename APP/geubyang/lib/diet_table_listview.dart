@@ -61,11 +61,11 @@ class _DietListViewState extends State<DietTableListView> {
               future: fetchDiet(),
               builder: (context, snapshot) {
                 if (snapshot.hasData) {
-                  return ListView.builder(
+                  return ListView.separated(
                     itemCount: snapshot.data!.length,
                     itemBuilder: (BuildContext context, int index) {
                       return _buildListItem(snapshot.data![index]);
-                    },
+                    }, separatorBuilder: (BuildContext context, int index) => const Divider()
                   );
                 } else if (snapshot.hasError) {
                   return Text('${snapshot.error}');
