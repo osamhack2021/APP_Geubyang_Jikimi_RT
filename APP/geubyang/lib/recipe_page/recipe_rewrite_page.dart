@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:geubyang/custom_textbutton.dart';
-import 'package:geubyang/main_page.dart';
+import 'recipe_board.dart';
 
-class WritePage extends StatelessWidget {
+class RecipeRewritePage extends StatelessWidget {
+  const RecipeRewritePage({Key? key}) : super(key: key);
+
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,17 +16,19 @@ class WritePage extends StatelessWidget {
         children: [
           TextFormField(
               //hint: title
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 hintText: 'title',
               ),
+              initialValue: '제목',
             ),
           TextFormField(
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
               hintText: 'Enter content'
             ),
+            initialValue: '내용',
             maxLines: 15,
           ),
-          CustomTextButton(text: '글쓰기', pageRoute: Get.off(MainPage))
+          CustomTextButton(text: '글수정하기', pageRoute: Get.off(const RecipeBoardPage()))
         ],
       ),
     );

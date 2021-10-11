@@ -20,7 +20,6 @@ final _kDietSource = {
 }..addAll({
     kToday: [
       Diet(dates: '0', breakfast: '1', lunch: '2', dinner: '3'),
-      Diet(dates: '0', breakfast: '1', lunch: '2', dinner: '3'),
     ],
   });
 
@@ -38,5 +37,5 @@ List<DateTime> daysInRange(DateTime first, DateTime last) {
 }
 
 final kToday = DateTime.now();
-final kFirstDay = DateTime(kToday.year, kToday.month - 3, kToday.day);
-final kLastDay = DateTime(kToday.year, kToday.month + 3, kToday.day);
+final kFirstDay = DateTime(kToday.year, kToday.month - 1, kToday.day);
+final kLastDay = DateTime(kToday.year, kToday.month + 1, kToday.day);

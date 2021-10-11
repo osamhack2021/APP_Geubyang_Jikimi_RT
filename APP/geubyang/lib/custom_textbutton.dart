@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
 class CustomTextButton extends StatelessWidget {
+  const CustomTextButton({Key? key, required this.text, required this.pageRoute}) : super(key: key);
+  
   final String text;
   final pageRoute;
 
-  const CustomTextButton({required this.text, required this.pageRoute});
 
   @override
   Widget build(BuildContext context) {

@@ -1,24 +1,17 @@
 //https://flutter.dev/docs/cookbook/networking/fetch-data#2-make-a-network-request
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
+import 'package:flutter/services.dart';
 import 'dart:convert';
 import 'dart:async';
 
 import 'diet.dart';
 
 Future<List<Diet>> fetchDiet() async {
-  final response = await http.get(Uri.parse(
-      'https://openapi.mnd.go.kr/3331313632303337343131363432313034/json/DS_TB_MNDT_DATEBYMLSVC/1/5/'));
-
-  if (response.statusCode == 200) {
-    print(response.body);
-    List list = jsonDecode(response.body)['DS_TB_MNDT_DATEBYMLSVC']['row'];
-    List<Diet> diets = list.map((e) => Diet.fromjson(e)).toList();
-    return diets;
-  } else {
-    print('Error');
-    throw Exception('Failed');
-  }
+  final String response =
+      await rootBundle.loadString('assets/data/diet_info_ATC_Oct.json');
+  List list = jsonDecode(response)['DS_TB_MNDT_DATEBYMLSVC_ATC_OCT'];
+  List<Diet> diets = list.map((e) => Diet.fromjson(e)).toList();
+  return diets;
 }
 
 class DietTableListView extends StatefulWidget {
@@ -36,12 +29,24 @@ class _DietListViewState extends State<DietTableListView> {
     super.initState();
   }
 
+  // 클래스 안에서만 사용하겠다는 의미 private method..
   Widget _buildListItem(Diet diet) {
-    return ListView(children: [
+    return Column(children: [
       Text(diet.dates),
-      Text(diet.breakfast),
-      Text(diet.lunch),
-      Text(diet.dinner),
+      // Text(diet.breakfast),
+      // Text(diet.lunch),
+      // Text(diet.dinner),
+      DataTable(columns: const [
+        DataColumn(label: Text('조식')),
+        DataColumn(label: Text('중식')),
+        DataColumn(label: Text('석식')),
+      ], rows: [
+        DataRow(cells: [
+          DataCell(Text(diet.breakfast)),
+          DataCell(Text(diet.lunch)),
+          DataCell(Text(diet.dinner)),
+        ]),
+      ])
     ]);
   }
 
