@@ -12,11 +12,16 @@ class Diet {
   });
 
   factory Diet.fromjson(Map<String, dynamic> json) {
-    return Diet(
-      dates: json['dates'],
-      breakfast: json['brst'],
-      lunch: json['lunc'],
-      dinner: json['dinr'],
-    );
+    try {
+      return Diet(
+        dates: json['dates'],
+        breakfast: json['brst'],
+        lunch: json['lunc'],
+        dinner: json['dinr'],
+      );
+    } catch (e) {
+      return Diet(
+          dates: '0000-00-00', breakfast: '아침', lunch: '점심', dinner: '저녁');
+    }
   }
 }
