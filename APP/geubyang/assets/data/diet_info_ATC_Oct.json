@@ -1,5 +1,5 @@
 {
-    "DS_TB_MNDT_DATEBYMLS, C_ATC_OCT": [
+    "DS_TB_MNDT_DATEBYMLSVC_ATC_OCT": [
         {
             "lunc": "쇠고기떡국, 호박볶음, 오이스틱, 배추김치",
             "sum_cal": "2162.90kcal",
@@ -10,7 +10,6 @@
         {
             "lunc": "밥, 순두부백탕, 브로콜리돼지고기볶음. 새송이버섯야채볶음, 배추김치",
             "sum_cal": "3166.75kcal",
-            "dates": "2021-10-02",
             "lunc_cal": "363kcal",
             "brst": "핫도그빵, 시리얼(증), 햄콘샐러드, 우유",
             "dinr": "오징어덮밥, 고구마구이, 푸실리샐러드, 백김치, 탄산음료"
