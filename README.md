@@ -1,8 +1,8 @@
-# 팀 소개
+# ✏팀 소개
 ![Logo](자료/팀로고.PNG)
 RT (Rice_Thieves)
 
-# 프로젝트명
+# ✏프로젝트명
 ![Logo](자료/프로젝트로고.PNG)
 Geubyang_Jikimi
 ## 프로젝트 소개
