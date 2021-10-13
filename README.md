@@ -39,7 +39,7 @@
 ## 🟤설치 안내 (Installation Process)
 
 
-## ⚫프로젝트 사용법 (Getting Started)
+## ⚫앱 사용법
 **마크다운 문법을 이용하여 자유롭게 기재**
 
 잘 모를 경우
