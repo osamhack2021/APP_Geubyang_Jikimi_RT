@@ -32,7 +32,7 @@ Geubyang_Jikimi
 ### 1. 카카오 오븐을 이용한 앱 스캐치
  ![Logo](자료/화면.PNG)
  ![Logo](자료/앱디자인.PNG)
-### Front-end
+### 2. flutter
 
 
 ## 🟤설치 안내 (Installation Process)
