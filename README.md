@@ -33,7 +33,7 @@ Geubyang_Jikimi
  ![Logo](자료/화면.PNG)
  ![Logo](자료/앱디자인.PNG)
 ### 2. flutter
- ![Logo](플루터.PNG)
+ ![Logo](자료/플루터.PNG)
 
 ## 🟤설치 안내 (Installation Process)
 
