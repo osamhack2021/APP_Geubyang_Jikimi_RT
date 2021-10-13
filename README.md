@@ -30,7 +30,7 @@ Geubyang_Jikimi
 
 ## 🟣사용 기술
 1. 카카오 오븐을 이용하여 앱 스캐치
- ![Logo](자료/화면.PNG)
+ (자료/화면.PNG)
 ### Front-end
 
 
