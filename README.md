@@ -1,4 +1,4 @@
-# 🔴팀 소개
+# 🔴팀 명
 ### RT (Rice_Thieves)
 ![Logo](자료/팀로고.PNG)
 
