@@ -3,7 +3,7 @@
 ![Logo](자료/팀로고.PNG)
 
 # 🟠프로젝트명
-### Geubyang_Jikimi(급양지키미)
+### 급양지키미(Geubyang_Jikimi)
 ![Logo](자료/프로젝트로고.PNG)
 
 ## 🟡프로젝트 소개
