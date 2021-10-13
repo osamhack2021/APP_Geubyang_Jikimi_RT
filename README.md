@@ -28,7 +28,7 @@ Geubyang_Jikimi
 ## 🔵컴퓨터 구성 / 필수 조건 안내 (Prerequisites)
 
 
-## 🟣기술 스택 (Technique Used) 
+## 🟣사용 기술
 
  
 ### Front-end
