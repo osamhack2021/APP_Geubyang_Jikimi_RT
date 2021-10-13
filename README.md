@@ -1,5 +1,5 @@
 # 🔴팀 명
-### RT (Rice_Thieves)
+### RT (Rice_Thieves) 밥도둑
 ![Logo](자료/팀로고.PNG)
 
 # 🟠프로젝트명
