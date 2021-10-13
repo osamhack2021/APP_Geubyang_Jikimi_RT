@@ -31,9 +31,9 @@
 
 ## 🟣사용 기술
 ### 1. 카카오 오븐(oven)을 이용한 앱 스캐치
- ![Logo](자료/화면.PNG)
- ![Logo](자료/앱디자인.PNG)
+ ![Logo](자료/화면.PNG) ![Logo](자료/앱디자인.PNG) 
  ![Logo](자료/조사.PNG)
+ ![Logo](자료/달력.PNG)
 ### 2. flutter
  ![Logo](자료/플루터.PNG)
 
