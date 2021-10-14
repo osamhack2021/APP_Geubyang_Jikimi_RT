@@ -67,11 +67,11 @@ class _MainPageState extends State<MainPage> {
                 children: <Widget>[
                   CustomTextButton(
                     text: '표준식단',
-                    pageRoute: () => Get.to(const DietTableMonthly()),
+                    pageRoute: () => Get.to(const DietTableListView()),
                   ),
                   CustomTextButton(
                     text: '급식만족도조사',
-                    pageRoute: () => Get.to(const DietTableListView()),
+                    pageRoute: () => Get.to(const DietSurvey()),
                   ),
                   CustomTextButton(
                     text: '응원의 말',
@@ -79,7 +79,7 @@ class _MainPageState extends State<MainPage> {
                   ),
                   CustomTextButton(
                     text: '레시피',
-                    pageRoute: () => Get.to(const RecipeBoardPage()),
+                    pageRoute: () => Get.to(const DietSurvey()),
                   ),
                 ],
               ),

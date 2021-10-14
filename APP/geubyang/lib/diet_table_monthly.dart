@@ -1,7 +1,7 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:intl/intl.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 import 'diet.dart';
@@ -54,26 +54,32 @@ class _DietTableMonthlyState extends State<DietTableMonthly> {
               _focusedDay = focusedDay;
             });
           }
-          List<Diet> dietList = await fetchDiet();
-          Diet selectedDiet = dietList.firstWhere(
-              (element) => DateTime.parse(element.dates) == selectedDay,
-              orElse: () {
-            return Diet(
-                dates: '0000-00-00',
-                breakfast: '조식',
-                lunch: '중식',
-                dinner: '석식');
-          });
-          showModalBottomSheet(
+          // List<Diet> dietList = await fetchDiet();
+          // Diet selectedDiet = dietList.firstWhere(
+          //     (element) => DateTime.parse(element.dates) == selectedDay,
+          //     orElse: () {
+          //   return Diet(
+          //       dates: '0000-00-00',
+          //       breakfast: '조식',
+          //       lunch: '중식',
+          //       dinner: '석식');
+          // });
+          showModalBottomSheet<void>(
               context: context,
               builder: (context) {
                 return Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    Text(selectedDiet.dates),
-                    Text(selectedDiet.breakfast),
-                    Text(selectedDiet.lunch),
-                    Text(selectedDiet.dinner),
+                    // Text(selectedDiet.dates),
+                    // Text(selectedDiet.breakfast),
+                    // Text(selectedDiet.lunch),
+                    // Text(selectedDiet.dinner),
+                    ListTile(
+                      leading: const Text('abc'),
+                      onTap: () {
+                        Navigator.pop(context);
+                      },
+                    )
                   ],
                 );
               });
