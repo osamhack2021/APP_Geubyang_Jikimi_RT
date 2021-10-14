@@ -28,7 +28,7 @@ class RecipeRewritePage extends StatelessWidget {
             initialValue: '내용',
             maxLines: 15,
           ),
-          CustomTextButton(text: '글수정하기', pageRoute: Get.off(const RecipeBoardPage()))
+          CustomTextButton(text: '글수정하기', pageRoute: () => Get.off(const RecipeBoardPage()))
         ],
       ),
     );

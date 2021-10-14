@@ -1,4 +1,3 @@
-//https://flutter.dev/docs/cookbook/networking/fetch-data#2-make-a-network-request
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:convert';
@@ -36,17 +35,19 @@ class _DietListViewState extends State<DietTableListView> {
       // Text(diet.breakfast),
       // Text(diet.lunch),
       // Text(diet.dinner),
-      DataTable(columns: const [
-        DataColumn(label: Text('조식')),
-        DataColumn(label: Text('중식')),
-        DataColumn(label: Text('석식')),
-      ], rows: [
-        DataRow(cells: [
-          DataCell(Text(diet.breakfast)),
-          DataCell(Text(diet.lunch)),
-          DataCell(Text(diet.dinner)),
+      Expanded(
+        child: DataTable(columns: const [
+          DataColumn(label: Text('조식')),
+          DataColumn(label: Text('중식')),
+          DataColumn(label: Text('석식')),
+        ], rows: [
+          DataRow(cells: [
+            DataCell(Text(diet.breakfast)),
+            DataCell(Text(diet.lunch)),
+            DataCell(Text(diet.dinner)),
+          ]),
         ]),
-      ])
+      )
     ]);
   }
 
