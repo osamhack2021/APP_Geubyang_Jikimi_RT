@@ -54,33 +54,58 @@ class _DietTableMonthlyState extends State<DietTableMonthly> {
               _focusedDay = focusedDay;
             });
           }
-          // List<Diet> dietList = await fetchDiet();
-          // Diet selectedDiet = dietList.firstWhere(
-          //     (element) => DateTime.parse(element.dates) == selectedDay,
-          //     orElse: () {
-          //   return Diet(
-          //       dates: '0000-00-00',
-          //       breakfast: '조식',
-          //       lunch: '중식',
-          //       dinner: '석식');
-          // });
+          List<Diet> dietList = await fetchDiet();
+          Diet selectedDiet = dietList.firstWhere(
+              (element) =>
+                  isSameDay(DateTime.parse(element.dates), selectedDay),
+              orElse: () {
+            return Diet(
+                dates: '0000-00-00',
+                breakfast: '조식',
+                lunch: '중식',
+                dinner: '석식');
+          });
           showModalBottomSheet<void>(
               context: context,
               builder: (context) {
-                return Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: <Widget>[
-                    // Text(selectedDiet.dates),
-                    // Text(selectedDiet.breakfast),
-                    // Text(selectedDiet.lunch),
-                    // Text(selectedDiet.dinner),
-                    ListTile(
-                      leading: const Text('abc'),
-                      onTap: () {
-                        Navigator.pop(context);
-                      },
-                    )
-                  ],
+                return Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[                      
+                      const Text: (selectedDiet.dates),
+                      ListTile(
+                        leading: const Text('조식'),
+                        title: Text(
+                          selectedDiet.breakfast,
+                          textAlign: TextAlign.center,
+                        ),
+                        onTap: () {
+                          Navigator.pop(context);
+                        },
+                      ),
+                      ListTile(
+                        leading: const Text('중식'),
+                        title: Text(
+                          selectedDiet.lunch,
+                          textAlign: TextAlign.center,
+                        ),
+                        onTap: () {
+                          Navigator.pop(context);
+                        },
+                      ),
+                      ListTile(
+                        leading: const Text('석식'),
+                        title: Text(
+                          selectedDiet.dinner,
+                          textAlign: TextAlign.center,
+                        ),
+                        onTap: () {
+                          Navigator.pop(context);
+                        },
+                      ),
+                    ],
+                  ),
                 );
               });
         },

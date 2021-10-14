@@ -71,7 +71,7 @@ class _MainPageState extends State<MainPage> {
                   ),
                   CustomTextButton(
                     text: '급식만족도조사',
-                    pageRoute: () => Get.to(const DietSurvey()),
+                    pageRoute: () => Get.to(const DietTableMonthly()),
                   ),
                   CustomTextButton(
                     text: '응원의 말',

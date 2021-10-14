@@ -26,6 +26,7 @@ class _DietListViewState extends State<DietTableListView> {
   @override
   void initState() {
     super.initState();
+    
   }
 
   // 클래스 안에서만 사용하겠다는 의미 private method..
