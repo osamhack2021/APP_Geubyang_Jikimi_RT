@@ -13,7 +13,6 @@ import 'survey.dart';
 class DietTableMonthly extends StatefulWidget {
   const DietTableMonthly({Key? key}) : super(key: key);
 
-
   @override
   _DietTableMonthlyState createState() => _DietTableMonthlyState();
 }
@@ -138,6 +137,10 @@ class _DietTableMonthlyState extends State<DietTableMonthly> {
               pageRoute: () => Get.to(const RecipeBoardPage()),
             ),
             alignment: Alignment.bottomCenter,
+          ),
+          CustomTextButton(
+            text: '레시피',
+            pageRoute: () => Get.to(const RecipeBoardPage()),
           ),
         ],
       ),
