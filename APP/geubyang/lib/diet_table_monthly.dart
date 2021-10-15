@@ -2,15 +2,17 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:geubyang/survey.dart';
 import 'package:table_calendar/table_calendar.dart';
 
+import 'custom_textbutton.dart';
 import 'diet.dart';
 import 'diet_utils.dart';
+import 'recipe_page/recipe_board.dart';
+import 'survey.dart';
 
 class DietTableMonthly extends StatefulWidget {
-  const DietTableMonthly({Key? key, required this.title}) : super(key: key);
-  final String title;
+  const DietTableMonthly({Key? key}) : super(key: key);
+
 
   @override
   _DietTableMonthlyState createState() => _DietTableMonthlyState();
@@ -33,8 +35,11 @@ class _DietTableMonthlyState extends State<DietTableMonthly> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: const Text('급양지키미'),
       ),
+      // drawer: Drawer(
+
+      // ),
       body: Column(
         children: [
           TableCalendar(
@@ -43,16 +48,10 @@ class _DietTableMonthlyState extends State<DietTableMonthly> {
             focusedDay: _focusedDay,
             calendarFormat: _calendarFormat,
             selectedDayPredicate: (day) {
-              // Use `selectedDayPredicate` to determine which day is currently selected.
-              // If this returns true, then `day` will be marked as selected.
-
-              // Using `isSameDay` is recommended to disregard
-              // the time-part of compared DateTime objects.
               return isSameDay(_selectedDay, day);
             },
             onDaySelected: (selectedDay, focusedDay) async {
               if (!isSameDay(_selectedDay, selectedDay)) {
-                // Call `setState()` when updating the selected day
                 setState(() {
                   _selectedDay = selectedDay;
                   _focusedDay = focusedDay;
@@ -64,10 +63,11 @@ class _DietTableMonthlyState extends State<DietTableMonthly> {
                       isSameDay(DateTime.parse(element.dates), selectedDay),
                   orElse: () {
                 return Diet(
-                    dates: '0000-00-00',
-                    breakfast: '조식',
-                    lunch: '중식',
-                    dinner: '석식');
+                  dates: '0000-00-00',
+                  breakfast: '조식',
+                  lunch: '중식',
+                  dinner: '석식',
+                );
               });
               showModalBottomSheet<void>(
                   context: context,
@@ -84,12 +84,11 @@ class _DietTableMonthlyState extends State<DietTableMonthly> {
                               selectedDiet.breakfast,
                               textAlign: TextAlign.center,
                             ),
-                            onTap: () {
-                              Navigator.pop(context);
-                            },
-                            onLongPress: () => Get.to(DietSurvey(
-                              dietInfo: selectedDiet.breakfast,
-                            )),
+                            onLongPress: () => Get.off(
+                              DietSurvey(
+                                dietInfo: selectedDiet.breakfast,
+                              ),
+                            ),
                           ),
                           ListTile(
                             leading: const Text('중식'),
@@ -97,12 +96,11 @@ class _DietTableMonthlyState extends State<DietTableMonthly> {
                               selectedDiet.lunch,
                               textAlign: TextAlign.center,
                             ),
-                            onTap: () {
-                              Navigator.pop(context);
-                            },
-                            onLongPress: () => Get.to(DietSurvey(
-                              dietInfo: selectedDiet.lunch,
-                            )),
+                            onLongPress: () => Get.off(
+                              DietSurvey(
+                                dietInfo: selectedDiet.lunch,
+                              ),
+                            ),
                           ),
                           ListTile(
                             leading: const Text('석식'),
@@ -110,12 +108,11 @@ class _DietTableMonthlyState extends State<DietTableMonthly> {
                               selectedDiet.dinner,
                               textAlign: TextAlign.center,
                             ),
-                            onTap: () {
-                              Navigator.pop(context);
-                            },
-                            onLongPress: () => Get.to(DietSurvey(
-                              dietInfo: selectedDiet.dinner,
-                            )),
+                            onLongPress: () => Get.off(
+                              DietSurvey(
+                                dietInfo: selectedDiet.dinner,
+                              ),
+                            ),
                           ),
                         ],
                       ),
@@ -134,6 +131,13 @@ class _DietTableMonthlyState extends State<DietTableMonthly> {
               // No need to call `setState()` here
               _focusedDay = focusedDay;
             },
+          ),
+          Align(
+            child: CustomTextButton(
+              text: '응원의 말',
+              pageRoute: () => Get.to(const RecipeBoardPage()),
+            ),
+            alignment: Alignment.bottomCenter,
           ),
         ],
       ),

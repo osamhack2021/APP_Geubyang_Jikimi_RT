@@ -1,31 +1,3 @@
-import 'dart:collection';
-
-import 'package:table_calendar/table_calendar.dart';
-
-import 'diet.dart';
-
-/// Example events.
-///
-/// Using a [LinkedHashMap] is highly recommended if you decide to use a map.
-final kDiets = LinkedHashMap<DateTime, List<Diet>>(
-  equals: isSameDay,
-  hashCode: getHashCode,
-)..addAll(_kDietSource);
-
-final _kDietSource = {
-  for (var item in List.generate(50, (index) => index))
-    DateTime.utc(kFirstDay.year, kFirstDay.month, item * 5): List.generate(
-        item % 4 + 1,
-        (index) => Diet(dates: '0', breakfast: '1', lunch: '2', dinner: '3'))
-}..addAll({
-    kToday: [
-      Diet(dates: '0', breakfast: '1', lunch: '2', dinner: '3'),
-    ],
-  });
-
-int getHashCode(DateTime key) {
-  return key.day * 1000000 + key.month * 10000 + key.year;
-}
 
 /// Returns a list of [DateTime] objects from [first] to [last], inclusive.
 List<DateTime> daysInRange(DateTime first, DateTime last) {
@@ -37,5 +9,5 @@ List<DateTime> daysInRange(DateTime first, DateTime last) {
 }
 
 final kToday = DateTime.now();
-final kFirstDay = DateTime(kToday.year, kToday.month - 1, kToday.day);
-final kLastDay = DateTime(kToday.year, kToday.month + 1, kToday.day);
+final kFirstDay = DateTime(kToday.year, kToday.month - 3, kToday.day);
+final kLastDay = DateTime(kToday.year, kToday.month + 3, kToday.day);

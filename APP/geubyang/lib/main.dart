@@ -17,9 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: DietTableMonthly(
-        title: '급양지키미',
-      ),
+      home: DietTableMonthly(),
     );
   }
 }
