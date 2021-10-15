@@ -1,82 +1,75 @@
-//https://flutter.dev/docs/cookbook/networking/fetch-data#2-make-a-network-request
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'dart:convert';
-import 'dart:async';
-
-import 'diet.dart';
-
-Future<List<Diet>> fetchDiet() async {
-  final String response =
-      await rootBundle.loadString('assets/data/diet_info_ATC_Oct.json');
-  List list = jsonDecode(response)['DS_TB_MNDT_DATEBYMLSVC_ATC_OCT'];
-  List<Diet> diets = list.map((e) => Diet.fromjson(e)).toList();
-  return diets;
-}
+import 'package:flutter/widgets.dart';
+import 'package:get/get.dart';
 
 class DietSurvey extends StatefulWidget {
-  const DietSurvey({Key? key}) : super(key: key);
+  const DietSurvey({Key? key, required this.dietInfo}) : super(key: key);
+  final String dietInfo;
 
   @override
-  _DietSurveyState createState() => _DietSurveyState();
+  State<DietSurvey> createState() => _DietSurveyState();
 }
 
+enum SATISFACTION { na, veryBad, bad, fair, good, veryGood }
+
 class _DietSurveyState extends State<DietSurvey> {
-  // late Future<List<Diet>> futureDiet;
-
-  @override
-  void initState() {
-    super.initState();
-  }
-
-  // 클래스 안에서만 사용하겠다는 의미 private method..
-  Widget _buildListItem(Diet diet) {
- return Column(children: [
-      Text(diet.dates),
-      // Text(diet.breakfast),
-      // Text(diet.lunch),
-      // Text(diet.dinner),
-      DataTable(columns: const [
-        DataColumn(label: Text('조식')),
-        DataColumn(label: Text('중식')),
-        DataColumn(label: Text('석식')),
-      ], rows: [
-        DataRow(cells: [
-          DataCell(Text(diet.breakfast)),
-          DataCell(Text(diet.lunch)),
-          DataCell(Text(diet.dinner)),
-        ]),
-      ])
-    ]);
-  }
+  SATISFACTION _satisfaction = SATISFACTION.na;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text('표준식단'),
-        ),
-        body: Center(
-          child: FutureBuilder<List<Diet>>(
-              future: fetchDiet(),
-              builder: (context, snapshot) {
-                if (snapshot.hasData) {
-                  return ListView.builder(
-                      itemCount: snapshot.data!.length,
-                      itemBuilder: (BuildContext context, int index) {
-                        if (DateTime.parse(snapshot.data![index].dates) == DateTime.now()) {
-                          return _buildListItem(snapshot.data![index]);
-                        }
-                        else {
-                          return const Text('식단정보가 없습니다.');
-                        }
-                      });
-                } else if (snapshot.hasError) {
-                  return Text('${snapshot.error}');
-                }
-
-                return const CircularProgressIndicator();
-              }),
+        appBar: AppBar(),
+        body: Column(
+          children: [
+            Text(widget.dietInfo),
+            Row(children: [
+              Radio(
+                  value: SATISFACTION.veryBad,
+                  groupValue: _satisfaction,
+                  onChanged: (value) {
+                    setState(() {
+                      _satisfaction = SATISFACTION.veryBad;
+                    });
+                  }),
+              const Text('매우 나쁨'),
+              Radio(
+                  value: SATISFACTION.bad,
+                  groupValue: _satisfaction,
+                  onChanged: (value) {
+                    setState(() {
+                      _satisfaction = SATISFACTION.bad;
+                    });
+                  }),
+              const Text('나쁨'),
+              Radio(
+                  value: SATISFACTION.fair,
+                  groupValue: _satisfaction,
+                  onChanged: (value) {
+                    setState(() {
+                      _satisfaction = SATISFACTION.fair;
+                    });
+                  }),
+              const Text('보통'),
+              Radio(
+                  value: SATISFACTION.good,
+                  groupValue: _satisfaction,
+                  onChanged: (value) {
+                    setState(() {
+                      _satisfaction = SATISFACTION.good;
+                    });
+                  }),
+              const Text('좋음'),
+              Radio(
+                  value: SATISFACTION.veryGood,
+                  groupValue: _satisfaction,
+                  onChanged: (value) {
+                    setState(() {
+                      _satisfaction = SATISFACTION.veryGood;
+                    });
+                  }),
+              const Text('매우 좋음'),
+            ])
+          ],
         ));
   }
 }

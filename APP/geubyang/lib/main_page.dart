@@ -71,15 +71,15 @@ class _MainPageState extends State<MainPage> {
                   ),
                   CustomTextButton(
                     text: '급식만족도조사',
-                    pageRoute: () => Get.to(const DietTableMonthly()),
+                    pageRoute: () => Get.to(const DietTableListView()),
                   ),
                   CustomTextButton(
                     text: '응원의 말',
-                    pageRoute: () => Get.to(const DietSurvey()),
+                    pageRoute: () => Get.to(const DietTableListView()),
                   ),
                   CustomTextButton(
                     text: '레시피',
-                    pageRoute: () => Get.to(const DietSurvey()),
+                    pageRoute: () => Get.to(const DietTableListView()),
                   ),
                 ],
               ),
