@@ -33,11 +33,17 @@
 ### 1. 카카오 오븐(oven)을 이용한 앱 스캐치
  ![Logo](자료/화면.PNG)
  ![Logo](자료/앱디자인.PNG) 
+
+👇아래 링크를 통하여 보실 수 있습니다!!
+ 
+ https://ovenapp.io/view/yUsnKJS2pT7j0miAHl7SmEzuznLKJp7F/
 ### 2. Flutter
  ![Logo](자료/플루터.PNG)
 
-## 🟤설치 안내 (Installation Process)
+## 🟤설치 안내
+📱 **안드로이드폰**은 '**Google play**'에서!!
 
+📱 **애플**은 '**App Store**'에서 만나보실 수 있습니다!!
 
 ## ⚫앱 사용법
 **마크다운 문법을 이용하여 자유롭게 기재**

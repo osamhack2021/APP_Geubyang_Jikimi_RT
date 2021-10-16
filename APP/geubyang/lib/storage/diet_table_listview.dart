@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'dart:convert';
 import 'dart:async';
 
-import 'diet.dart';
+import '../diet.dart';
 
 Future<List<Diet>> fetchDiet() async {
   final String response =
