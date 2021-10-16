@@ -19,7 +19,7 @@ class RecipeBoardPage extends StatelessWidget {
                 Get.to(RecipeDetailPage(index), arguments: "데이터");
               },
               title: const Text('제목'),
-              leading: const Text('1'),
+              leading: Text((index + 1).toString()),
             );
           },
           separatorBuilder: (context, index) {

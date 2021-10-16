@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:geubyang/custom_textbutton.dart';
-import 'package:geubyang/main_page.dart';
+import 'package:geubyang/storage/main_page.dart';
 
 class WritePage extends StatelessWidget {
   const WritePage({Key? key}) : super(key: key);

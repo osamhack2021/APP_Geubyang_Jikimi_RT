@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:geubyang/storage_manage.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 import 'custom_textbutton.dart';
@@ -36,9 +37,29 @@ class _DietTableMonthlyState extends State<DietTableMonthly> {
       appBar: AppBar(
         title: const Text('급양지키미'),
       ),
-      // drawer: Drawer(
-
-      // ),
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: <Widget>[
+            ListTile(
+              leading: Icon(
+                Icons.qr_code_scanner_rounded,
+                color: Colors.grey[850],
+              ),
+              title: const Text('창고정리'),
+              onTap: () => Get.to(const StorageManage()),
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.qr_code_scanner_rounded,
+                color: Colors.grey[850],
+              ),
+              title: const Text('창고정리'),
+              onTap: () => Get.to(const StorageManage()),
+            )
+          ],
+        ),
+      ),
       body: Column(
         children: [
           TableCalendar(
@@ -131,13 +152,12 @@ class _DietTableMonthlyState extends State<DietTableMonthly> {
               _focusedDay = focusedDay;
             },
           ),
-          Align(
-            child: CustomTextButton(
-              text: '응원의 말',
-              pageRoute: () => Get.to(const RecipeBoardPage()),
-            ),
-            alignment: Alignment.bottomCenter,
+          const SizedBox(height: 40),
+          CustomTextButton(
+            text: '응원의 말',
+            pageRoute: () => Get.to(const RecipeBoardPage()),
           ),
+          const SizedBox(height: 40),
           CustomTextButton(
             text: '레시피',
             pageRoute: () => Get.to(const RecipeBoardPage()),

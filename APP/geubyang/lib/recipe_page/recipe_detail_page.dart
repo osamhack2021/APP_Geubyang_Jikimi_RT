@@ -6,11 +6,11 @@ import 'recipe_rewrite_page.dart';
 class RecipeDetailPage extends StatelessWidget {
   final int id;
 
-  const RecipeDetailPage(this.id);
+  const RecipeDetailPage(this.id, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    String data = Get.arguments;
+//    String data = Get.arguments;
 
     return Scaffold(
         appBar: AppBar(),
@@ -32,7 +32,7 @@ class RecipeDetailPage extends StatelessWidget {
               ),
               ElevatedButton(
                   onPressed: () {
-                    Get.to(RecipeRewritePage());
+                    Get.to(const RecipeRewritePage());
                   },
                   child: const Text('rewrite')),
             ],
