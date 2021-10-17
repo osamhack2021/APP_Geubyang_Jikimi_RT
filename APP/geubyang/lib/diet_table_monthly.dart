@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:geubyang/login.dart';
 import 'package:geubyang/storage_manage.dart';
 import 'package:table_calendar/table_calendar.dart';
 
@@ -46,8 +47,8 @@ class _DietTableMonthlyState extends State<DietTableMonthly> {
                 Icons.qr_code_scanner_rounded,
                 color: Colors.grey[850],
               ),
-              title: const Text('창고정리'),
-              onTap: () => Get.to(const StorageManage()),
+              title: const Text('로그인'),
+              onTap: () => Get.to(LoginScreen()),
             ),
             ListTile(
               leading: Icon(

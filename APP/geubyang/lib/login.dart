@@ -1,19 +1,14 @@
- import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-
-import 'Register.dart';
-
-
+import 'register.dart';
 
 
 class Login extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Flutter Login UI',
       debugShowCheckedModeBanner: false,
       home: LoginScreen(
@@ -26,6 +21,8 @@ class Login extends StatelessWidget {
 }
 
 class LoginScreen extends StatefulWidget {
+  const LoginScreen({Key? key}) : super(key: key);
+
   @override
   _LoginScreenState createState() => _LoginScreenState();
 }

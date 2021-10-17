@@ -1,13 +1,13 @@
- import 'dart:html';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter/material.dart';
 
 
 
 
 class RegisterPage extends StatelessWidget {
+  const RegisterPage({Key? key}) : super(key: key);
+
  
   // This widget is the root of your application.
   @override
@@ -16,8 +16,6 @@ class RegisterPage extends StatelessWidget {
       title: 'Flutter Login UI',
       debugShowCheckedModeBanner: false,
       home: RegisterScreen(
-               
-       
       ),
       
     );
@@ -25,12 +23,14 @@ class RegisterPage extends StatelessWidget {
 }
 
 class RegisterScreen extends StatefulWidget {
+  const RegisterScreen({Key? key}) : super(key: key);
+
   @override
   _RegisterScreenState createState() => _RegisterScreenState();
 }
 
 class _RegisterScreenState extends State<RegisterScreen> {
-  bool _rememberMe = false;
+  final bool _rememberMe = false;
   
 
   Widget _buildNameTF() {

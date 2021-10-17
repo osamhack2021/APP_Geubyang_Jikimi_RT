@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:geubyang/storage/diet_table_listview.dart';
-import 'package:geubyang/diet_table_monthly.dart';
-import 'package:geubyang/recipe_page/recipe_board.dart';
-import 'package:geubyang/survey.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../custom_textbutton.dart';
 
