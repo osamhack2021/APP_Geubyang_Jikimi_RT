@@ -1,28 +1,8 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:geubyang/login.dart';
 
-
-
-
-class RegisterPage extends StatelessWidget {
-  const RegisterPage({Key? key}) : super(key: key);
-
- 
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Flutter Login UI',
-      debugShowCheckedModeBanner: false,
-      home: RegisterScreen(
-      ),
-      
-    );
-  }
-}
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({Key? key}) : super(key: key);
@@ -257,7 +237,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
         child: const Text(
           '회원가입',
           style: TextStyle(
-            color: Color(0xFF527DAA),
+            color: Colors.white,
             letterSpacing: 1.5,
             fontSize: 18.0,
             fontWeight: FontWeight.bold,
@@ -307,7 +287,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   physics: const AlwaysScrollableScrollPhysics(),
                   padding: const EdgeInsets.symmetric(
                     horizontal: 40.0,
-                    vertical: 120.0,
+                    vertical: 20.0,
                   ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -321,10 +301,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      
-                      _buildNameTF(),
-                      
-                   
+                      _buildNameTF(),                
                       _buildIDTF(),
                       _buildPasswordTF(),
                       _buildConfirmPasswordTF(),

@@ -5,7 +5,6 @@ import 'package:geubyang/diet_table_monthly.dart';
 
 import 'register.dart';
 
-
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
@@ -15,7 +14,6 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   bool _rememberMe = false;
-  
 
   Widget _buildEmailTF() {
     return Column(
@@ -86,21 +84,20 @@ class _LoginScreenState extends State<LoginScreen> {
       ],
     );
   }
- Widget _buildSignupBtn() {
+
+  Widget _buildSignupBtn() {
     return Container(
       alignment: Alignment.centerLeft,
       child: TextButton(
-        onPressed: ()=> Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (_) => const RegisterPage()),
-                    ),
+        onPressed: () => Navigator.push(
+          context,
+          MaterialPageRoute(builder: (_) => const RegisterScreen()),
+        ),
         child: const Text(
           '회원가입',
           style: kLabelStyle,
         ),
       ),
-      
     );
   }
 
@@ -108,7 +105,6 @@ class _LoginScreenState extends State<LoginScreen> {
     return Container(
       alignment: Alignment.centerRight,
       child: TextButton(
-        
         onPressed: () {},
         // => print('비밀번호찾기 Button Pressed'),
         child: const Text(
@@ -118,7 +114,7 @@ class _LoginScreenState extends State<LoginScreen> {
       ),
     );
   }
-  
+
   Widget _buildRememberMeCheckbox() {
     return SizedBox(
       height: 20.0,
@@ -155,7 +151,7 @@ class _LoginScreenState extends State<LoginScreen> {
         child: const Text(
           '로그인',
           style: TextStyle(
-            color: Color(0xFF527DAA),
+            color: Colors.white,
             letterSpacing: 1.5,
             fontSize: 18.0,
             fontWeight: FontWeight.bold,
@@ -165,13 +161,6 @@ class _LoginScreenState extends State<LoginScreen> {
       ),
     );
   }
-
- 
-
-  
-  
-
-  
 
   @override
   Widget build(BuildContext context) {
@@ -221,17 +210,15 @@ class _LoginScreenState extends State<LoginScreen> {
                       ),
                       const SizedBox(height: 30.0),
                       _buildEmailTF(),
-                      const SizedBox(
-                        height: 30.0
-                      ),
+                      const SizedBox(height: 30.0),
                       _buildPasswordTF(),
                       Row(
-                        mainAxisAlignment:MainAxisAlignment.spaceBetween,
-                        children: <Widget>[
-                        _buildForgotPasswordBtn(),
-                        _buildSignupBtn()]),
-                       
-                       _buildRememberMeCheckbox(),
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: <Widget>[
+                            _buildForgotPasswordBtn(),
+                            _buildSignupBtn()
+                          ]),
+                      _buildRememberMeCheckbox(),
                       _buildLoginBtn(),
                     ],
                   ),
@@ -245,7 +232,7 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 }
 
-const hintTextStyle = TextStyle(
+const khintTextStyle = TextStyle(
   color: Colors.white54,
   fontFamily: 'OpenSans',
 );

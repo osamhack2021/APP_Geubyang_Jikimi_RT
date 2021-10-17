@@ -1,10 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter/material.dart';
 
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Login UI',
+      debugShowCheckedModeBanner: false,
+      home: LoginScreen(),
+    );
+  }
+}
 
 class LoginScreen extends StatefulWidget {
-  const LoginScreen({Key? key}) : super(key: key);
-
   @override
   _LoginScreenState createState() => _LoginScreenState();
 }
@@ -20,21 +33,21 @@ class _LoginScreenState extends State<LoginScreen> {
           '군번',
           style: kLabelStyle,
         ),
-        const SizedBox(height: 10.0),
+        SizedBox(height: 10.0),
         Container(
           alignment: Alignment.centerLeft,
           decoration: kBoxDecorationStyle,
           height: 60.0,
           child: TextField(
             keyboardType: TextInputType.emailAddress,
-            style: const TextStyle(
+            style: TextStyle(
               color: Colors.white,
               fontFamily: 'OpenSans',
             ),
             decoration: InputDecoration(
               border: InputBorder.none,
-              contentPadding: const EdgeInsets.only(top: 14.0),
-              prefixIcon: const Icon(
+              contentPadding: EdgeInsets.only(top: 14.0),
+              prefixIcon: Icon(
                 Icons.person_rounded,
                 color: Colors.white,
               ),
@@ -55,21 +68,21 @@ class _LoginScreenState extends State<LoginScreen> {
           '비밀번호',
           style: kLabelStyle,
         ),
-        const SizedBox(height: 10.0),
+        SizedBox(height: 10.0),
         Container(
           alignment: Alignment.centerLeft,
           decoration: kBoxDecorationStyle,
           height: 60.0,
           child: TextField(
             obscureText: true,
-            style: const TextStyle(
+            style: TextStyle(
               color: Colors.white,
               fontFamily: 'OpenSans',
             ),
             decoration: InputDecoration(
               border: InputBorder.none,
-              contentPadding: const EdgeInsets.only(top: 14.0),
-              prefixIcon: const Icon(
+              contentPadding: EdgeInsets.only(top: 14.0),
+              prefixIcon: Icon(
                 Icons.lock,
                 color: Colors.white,
               ),
@@ -84,8 +97,9 @@ class _LoginScreenState extends State<LoginScreen> {
  Widget _buildSignupBtn() {
     return Container(
       alignment: Alignment.centerLeft,
-      child: TextButton(
-        onPressed: () => {print('회원가입 Button Pressed')},
+      child: FlatButton(
+        onPressed: () => print('회원가입 Button Pressed'),
+        padding: EdgeInsets.only(right: 0.0),
         child: Text(
           '회원가입',
           style: kLabelStyle,
