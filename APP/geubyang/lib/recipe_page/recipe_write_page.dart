@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:geubyang/custom_textbutton.dart';
-import 'package:geubyang/storage/main_page.dart';
+import 'package:geubyang/recipe_page/recipe_board.dart';
+// import 'package:geubyang/storage/main_page.dart';
 
 class WritePage extends StatelessWidget {
   const WritePage({Key? key}) : super(key: key);
@@ -25,7 +26,7 @@ class WritePage extends StatelessWidget {
             ),
             maxLines: 15,
           ),
-          CustomTextButton(text: '글쓰기', pageRoute: () => Get.off(MainPage))
+          CustomTextButton(text: '글쓰기', pageRoute: () => Get.off(const RecipeBoardPage()))
         ],
       ),
     );

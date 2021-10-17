@@ -48,7 +48,7 @@ class _DietTableMonthlyState extends State<DietTableMonthly> {
                 color: Colors.grey[850],
               ),
               title: const Text('로그인'),
-              onTap: () => Get.to(LoginScreen()),
+              onTap: () => Get.to(const LoginScreen()),
             ),
             ListTile(
               leading: Icon(
