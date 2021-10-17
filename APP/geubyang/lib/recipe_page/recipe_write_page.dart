@@ -26,7 +26,7 @@ class WritePage extends StatelessWidget {
             ),
             maxLines: 15,
           ),
-          CustomTextButton(text: '글쓰기', pageRoute: () => Get.off(const RecipeBoardPage()))
+          CustomTextButton(text: '글쓰기', pageRoute: () => Get.off(RecipeBoardPage()))
         ],
       ),
     );

@@ -2,9 +2,11 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:geubyang/board_cheering.dart';
 import 'package:geubyang/login.dart';
 import 'package:geubyang/storage_manage.dart';
 import 'package:table_calendar/table_calendar.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import 'custom_textbutton.dart';
 import 'diet.dart';
@@ -20,6 +22,12 @@ class DietTableMonthly extends StatefulWidget {
 }
 
 class _DietTableMonthlyState extends State<DietTableMonthly> {
+  launchBrowser(String url) async {
+    if (await canLaunch(url)) {
+      await launch(url, forceSafariVC: false, forceWebView: false);
+    }
+  }
+
   CalendarFormat _calendarFormat = CalendarFormat.month;
   DateTime _focusedDay = DateTime.now();
   DateTime? _selectedDay;
@@ -42,6 +50,30 @@ class _DietTableMonthlyState extends State<DietTableMonthly> {
         child: ListView(
           padding: EdgeInsets.zero,
           children: <Widget>[
+            DrawerHeader(
+              decoration: const BoxDecoration(
+                color: Colors.blue,
+              ),
+              child: Column(
+                children: [
+                  const Text(
+                    '급양 지키미',
+                    style: TextStyle(fontSize: 40),
+                  ),
+                  TextButton(
+                    onPressed: () {
+                      setState(() {
+                        launchBrowser("http://poisonmap.mfds.go.kr/");
+                      });
+                    },
+                    child: const Text(
+                      '식중독 지수',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ],
+              ),
+            ),
             ListTile(
               leading: Icon(
                 Icons.qr_code_scanner_rounded,
@@ -57,6 +89,14 @@ class _DietTableMonthlyState extends State<DietTableMonthly> {
               ),
               title: const Text('창고정리'),
               onTap: () => Get.to(const StorageManage()),
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.qr_code_scanner_rounded,
+                color: Colors.grey[850],
+              ),
+              title: const Text('QR코드 스캔'),
+              onTap: (() {}),
             )
           ],
         ),
@@ -156,12 +196,12 @@ class _DietTableMonthlyState extends State<DietTableMonthly> {
           const SizedBox(height: 40),
           CustomTextButton(
             text: '응원의 말',
-            pageRoute: () => Get.to(const RecipeBoardPage()),
+            pageRoute: () => Get.to(RecipeBoardPage()),
           ),
           const SizedBox(height: 40),
           CustomTextButton(
             text: '레시피',
-            pageRoute: () => Get.to(const RecipeBoardPage()),
+            pageRoute: () => Get.to(CheeringBoardPage()),
           ),
         ],
       ),
