@@ -13,7 +13,7 @@ class RecipeBoardPage extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(),
         body: ListView.separated(
-          itemCount: 4,
+          itemCount: 6,
           itemBuilder: (context, index) {
             return ListTile(
               onTap: () {

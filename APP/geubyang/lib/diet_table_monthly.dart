@@ -56,6 +56,12 @@ class _DietTableMonthlyState extends State<DietTableMonthly> {
               ),
               child: Column(
                 children: [
+                  Container(
+                    decoration: const BoxDecoration(
+                        image: DecorationImage(
+                      image: ExactAssetImage('assets/logo.PNG'),
+                    )),
+                  ),
                   const Text(
                     '급양 지키미',
                     style: TextStyle(fontSize: 40),
@@ -66,17 +72,30 @@ class _DietTableMonthlyState extends State<DietTableMonthly> {
                         launchBrowser("http://poisonmap.mfds.go.kr/");
                       });
                     },
-                    child: const Text(
-                      '식중독 지수',
-                      style: TextStyle(color: Colors.white),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Icon(
+                          Icons.info,
+                          color: Colors.red,
+                        ),
+                        Text(
+                          '식중독 지수',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ],
                     ),
+                  ),
+                  const Text(
+                    '손씻기 생활화',
+                    style: TextStyle(color: Colors.white),
                   ),
                 ],
               ),
             ),
             ListTile(
               leading: Icon(
-                Icons.qr_code_scanner_rounded,
+                Icons.login,
                 color: Colors.grey[850],
               ),
               title: const Text('로그인'),
@@ -84,7 +103,7 @@ class _DietTableMonthlyState extends State<DietTableMonthly> {
             ),
             ListTile(
               leading: Icon(
-                Icons.qr_code_scanner_rounded,
+                Icons.storage,
                 color: Colors.grey[850],
               ),
               title: const Text('창고정리'),
@@ -196,12 +215,12 @@ class _DietTableMonthlyState extends State<DietTableMonthly> {
           const SizedBox(height: 40),
           CustomTextButton(
             text: '응원의 말',
-            pageRoute: () => Get.to(RecipeBoardPage()),
+            pageRoute: () => Get.to(CheeringBoardPage()),
           ),
           const SizedBox(height: 40),
           CustomTextButton(
             text: '레시피',
-            pageRoute: () => Get.to(CheeringBoardPage()),
+            pageRoute: () => Get.to(RecipeBoardPage()),
           ),
         ],
       ),
