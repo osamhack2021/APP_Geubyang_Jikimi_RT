@@ -39,6 +39,8 @@
             <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/537adb0173a1caef4a35584d8ad304476e9d0629/%EC%9E%90%EB%A3%8C/%EB%A9%94%EC%9D%B8%ED%99%94%EB%A9%B4.PNG"><img src="/자료/메인화면.PNG" width="60%" height="60%"></a></div></td>
             <td width="33%">앱 실행후 첫 화면, 로그인 및 회원가입 </td>
         </tr>
+		  </tbody>
+</table>
         
 <table>
         <tbody>
@@ -76,6 +78,8 @@
             <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/113904670e644f8c8cc93a2a8ab6055b300f223e/%EC%9E%90%EB%A3%8C/%EB%A7%8C%EC%A1%B1%EB%8F%84%EC%A1%B0%EC%82%AC.PNG"><img src="/자료/만족도조사.PNG" width="60%" height="60%"></a></div></td>
             <td width="33%">끼니 마다 할 수 있는 급식만족도조사</td>
         </tr>
+		  </tbody>
+</table>
 		
 <table>
         <tbody>
@@ -90,6 +94,8 @@
             <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/1fc64a57e504f198ea49800ac1e25a72228aaea0/%EC%9E%90%EB%A3%8C/%EC%9D%91%EC%9B%90%EC%9D%98%EB%A7%90.PNG"><img src="/자료/응원의말.PNG" width="60%" height="60%"></a></div></td>
             <td width="33%">고생하는 취사병들에게 따뜻한 말 한마디 건네는 게시판</td>
         </tr>
+		  </tbody>
+</table>
 		
 <table>
         <tbody>
@@ -107,6 +113,8 @@
         <tr>
             <td>타 부대와 레시피를 공유가능</td>
         </tr>
+		  </tbody>
+</table>
 		
 <table>
         <tbody>
@@ -121,8 +129,7 @@
             <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/0f63ddeffab7130d64b7a8d43a458e5c010b4675/%EC%9E%90%EB%A3%8C/%EC%B0%BD%EA%B3%A0%EC%A0%95%EB%A6%AC.PNG"><img src="/자료/창고정리.PNG" width="60%" height="60%"></a></div></td>
             <td width="33%">창고에 들어갈 물품 추가</td>
 	</tr>
-	<tr>
-        </tr>
+
 	<tr>
            <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/0f63ddeffab7130d64b7a8d43a458e5c010b4675/%EC%9E%90%EB%A3%8C/%EC%B0%BD%EA%B3%A0.PNG"><img src="/자료/창고.PNG" width="60%" height="60%"></a></div></td>
            <td>창고정리완료</td>
@@ -144,6 +151,8 @@
             <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/57f166e8d376ad9a8671cccfddc02700d6cb780a/%EC%9E%90%EB%A3%8C/%EB%A9%94%EB%89%B4%EC%B0%BD.PNG"><img src="/자료/메뉴창.PNG" width="60%" height="60%"></a></div></td>
             <td width="33%">식중독 지수 확인 및 손씻기 강조, 로그아웃, 창고정리</td>
         </tr>
+		  </tbody>
+</table>
         
 
 ## 🟣사용 기술
