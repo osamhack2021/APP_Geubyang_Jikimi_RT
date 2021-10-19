@@ -61,6 +61,10 @@
  샘플 에디터 [https://stackedit.io/app#](https://stackedit.io/app#)
  
 ## 🙏팀 정보 (Team Information)
+|왼쪽 정렬|가운데 정렬|오른쪽 정렬|
+|:---|:---:|---:|
+|내용1|내용2|내용3|
+|내용1|내용2|내용3|
 |모지훈|(morivy42@gmail.com)|Github Id: morivy42|
 
 ## ‼저작권 및 사용권 정보 (Copyleft / End User License)
