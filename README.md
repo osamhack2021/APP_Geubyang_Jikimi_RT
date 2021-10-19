@@ -35,7 +35,7 @@
 			</td>
 		</tr>
 		<tr>
-            <td rowspan="2"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/consulting1.jpg"><img src="/image/consulting1.jpg" width="60%" height="60%"></a></div></td>
+            <td rowspan="2"><div align="center"><![Logo](자료/메뉴창.PNG)  width="60%" height="60%"></a></div></td>
             <td width="33%">최신 보안 기술 적용</td>
         </tr>
         <tr>
