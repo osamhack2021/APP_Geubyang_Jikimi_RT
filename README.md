@@ -101,8 +101,12 @@
 		</tr>
 		<tr>
             <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/f0a5e47d0b196b4e6079a609b28fbd59f68ff715/%EC%9E%90%EB%A3%8C/%EB%A0%88%EC%8B%9C%ED%94%BC.PNG"><img src="/자료/레시피.PNG" width="60%" height="60%"></a></div></td>
-            <td width="33%">국군 전 부대 취사병과 조리부사관의 ‘소통의 장’, 타 부대와 레시피를 공유가 가능</td>
+            <td width="33%">국군 전 부대 취사병과 조리부사관의 ‘소통의 장’</td>
         </tr>
+        <tr>
+            <td>타 부대와 레시피를 공유가 가능</td>
+        </tr>
+        <tr>
 		
 <table>
         <tbody>
