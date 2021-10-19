@@ -30,13 +30,13 @@
 		<tr>
 			<td colspan=2>
 				<br>
-				<b>ㆍ 로그인 </b><br>
+				<b>ㆍ 로그인화면</b><br>
 				<br>
 			</td>
 		</tr>
 		<tr>
             <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/537adb0173a1caef4a35584d8ad304476e9d0629/%EC%9E%90%EB%A3%8C/%EB%A9%94%EC%9D%B8%ED%99%94%EB%A9%B4.PNG"><img src="/자료/메인화면.PNG" width="60%" height="60%"></a></div></td>
-            <td width="33%">최신 보안 기술 적용</td>
+            <td width="33%">로그인/</td>
         </tr>
         <tr>
             <td>다양한 상담 서비스 지원</td>
