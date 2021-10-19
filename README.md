@@ -124,6 +124,7 @@
            <td>창고정리완료</td>
         </tr>
    </tbody>
+	
 </table>
 <br><br>
 
@@ -138,7 +139,7 @@
 		</tr>
 		<tr>
             <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/57f166e8d376ad9a8671cccfddc02700d6cb780a/%EC%9E%90%EB%A3%8C/%EB%A9%94%EB%89%B4%EC%B0%BD.PNG"><img src="/자료/메뉴창.PNG" width="60%" height="60%"></a></div></td>
-            <td width="33%">로그아웃, 창고정리</td>
+            <td width="33%">식중독 지수 확인 및 손씻기 강조, 로그아웃, 창고정리</td>
         </tr>
         
 |![Logo](자료/메뉴창.PNG) |앱 실행 후 메뉴창과 메인 화면을 통해, 장병들의 청결도를 높일 수 있습니다. 식중독과 같은 질병은, 사실 경각심이 잘 들지 않기 때문에, 앱을 통해 반복적인 경고를 하면 예방이 원활하게 될 것으로 예상합니다. 또한, 매일의 표준식단을 반강제적으로 보게 하여 장병들의 식단에 대한 이해도를 높일 수 있고, 특히 취사병들이 다음 끼니를 머릿속으로 구상하게 할 수 있습니다.|
