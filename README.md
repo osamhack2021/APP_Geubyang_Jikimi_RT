@@ -72,7 +72,7 @@
 			</td>
 		</tr>
 		<tr>
-            <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/113904670e644f8c8cc93a2a8ab6055b300f223e/%EC%9E%90%EB%A3%8C/%EB%A7%8C%EC%A1%B1%EB%8F%84%EC%A1%B0%EC%82%AC.PNG"><img src="/자료/.PNG" width="60%" height="60%"></a></div></td>
+            <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/113904670e644f8c8cc93a2a8ab6055b300f223e/%EC%9E%90%EB%A3%8C/%EB%A7%8C%EC%A1%B1%EB%8F%84%EC%A1%B0%EC%82%AC.PNG"><img src="/자료/만족도조사.PNG" width="60%" height="60%"></a></div></td>
             <td width="33%">급식만족도조사</td>
         </tr>
 	
