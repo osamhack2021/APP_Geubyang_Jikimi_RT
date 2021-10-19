@@ -75,7 +75,32 @@
             <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/113904670e644f8c8cc93a2a8ab6055b300f223e/%EC%9E%90%EB%A3%8C/%EB%A7%8C%EC%A1%B1%EB%8F%84%EC%A1%B0%EC%82%AC.PNG"><img src="/자료/만족도조사.PNG" width="60%" height="60%"></a></div></td>
             <td width="33%">급식만족도조사</td>
         </tr>
-	
+		
+<table>
+        <tbody>
+		<tr>
+			<td colspan=2>
+				<br>
+				<b>ㆍ 로그인 화면</b><br>
+				<br>
+			</td>
+		</tr>
+		<tr>
+            <td rowspan="2"><div align="center"><a href="<table>
+        <tbody>
+		<tr>
+			<td colspan=2>
+				<br>
+				<b>ㆍ 로그인 화면</b><br>
+				<br>
+			</td>
+		</tr>
+		<tr>
+            <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/1fc64a57e504f198ea49800ac1e25a72228aaea0/%EC%9E%90%EB%A3%8C/%EC%9D%91%EC%9B%90%EC%9D%98%EB%A7%90.PNG"><img src="/자료/메인화면.PNG" width="60%" height="60%"></a></div></td>
+            <td width="33%">취사병에게 한마디</td>
+        </tr>"><img src="/자료/응원의말.PNG" width="60%" height="60%"></a></div></td>
+            <td width="33%">고생하는 취사병들에게 따뜻한 말 한마디 건넬 수 있는 게시판</td>
+        </tr>
         
 
         
