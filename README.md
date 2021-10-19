@@ -49,7 +49,7 @@
 			</td>
 		</tr>
 		<tr>
-            <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/537adb0173a1caef4a35584d8ad304476e9d0629/%EC%9E%90%EB%A3%8C/%EB%A9%94%EC%9D%B8%ED%99%94%EB%A9%B4.PNG"><img src="/자료/메인화면.PNG" width="60%" height="60%"></a></div></td>
+            <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/955104c1d143b7000c7a58b0c284ca2144f1e772/%EC%9E%90%EB%A3%8C/%EB%8B%A4%EC%9D%8C%ED%99%94%EB%A9%B4.PNG"><img src="/자료/다음화면.PNG" width="60%" height="60%"></a></div></td>
             <td width="33%">표준식단 </td>
         </tr>
 
