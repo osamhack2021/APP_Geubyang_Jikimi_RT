@@ -95,7 +95,7 @@
 		<tr>
 			<td colspan=2>
 				<br>
-				<b>ㆍ 레시피공유</b><br>
+				<b>ㆍ 📃레시피공유</b><br>
 				<br>
 			</td>
 		</tr>
@@ -112,7 +112,7 @@
 		<tr>
 			<td colspan=2>
 				<br>
-				<b>ㆍ 취사병들의 창고</b><br>
+				<b>ㆍ 📦취사병들의 창고</b><br>
 				<br>
 			</td>
 		</tr>
@@ -136,7 +136,7 @@
 		<tr>
 			<td colspan=2>
 				<br>
-				<b>ㆍ 메뉴창</b><br>
+				<b>ㆍ 🔔메뉴창</b><br>
 				<br>
 			</td>
 		</tr>
