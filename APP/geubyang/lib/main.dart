@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:geubyang/diet_table_monthly.dart';
 import 'package:geubyang/login.dart';
 
 

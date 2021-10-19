@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:get/get.dart';
-import 'recipe_rewrite_page.dart';
 
 class RecipeDetailPage extends StatelessWidget {
   final int id;
