@@ -62,6 +62,7 @@
  
 ## 🙏팀 정보 (Team Information)
 |이름|이메일|Github Id|
+|:---:|:---:|:---:|
 |김동현|ehdgus1776@gmail.com|Github Id: ehdgus1776|
 |이강선|lks191225@gmail.com|Github Id: lks191225|
 |모지훈|morivy42@gmail.com|Github Id: morivy42|
