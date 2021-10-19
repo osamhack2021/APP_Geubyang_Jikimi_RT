@@ -128,7 +128,7 @@
 </table>
 <br><br>
 
-		<table>
+<table>
         <tbody>
 		<tr>
 			<td colspan=2>
