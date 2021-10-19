@@ -56,7 +56,7 @@
             <td>다양한 상담 서비스 지원</td>
         </tr>
         <tr>
-            <td rowspan="2"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/consulting2.jpg"><img src="/image/consulting2.jpg" width="60%" height="60%"></a></div></td>
+            <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/5b10a5d33eec83ee0644d1c3e726add3eb5c9964/%EC%9E%90%EB%A3%8C/%ED%91%9C%EC%A4%80%EC%8B%9D%EB%8B%A8.PNG"><img src="/자료/표준식단.PNG" width="60%" height="60%"></a></div></td>
            <td>전문상담관 선택 기능</td>
         </tr>
         <tr>
