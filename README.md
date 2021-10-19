@@ -35,7 +35,7 @@
 			</td>
 		</tr>
 		<tr>
-            <td rowspan="2"><div align="center"><![Logo](자료/메뉴창.PNG)  width="60%" height="60%"></a></div></td>
+            <td rowspan="2"><div align="center"><https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/9c111bf3bf57051219f78a941f362031dcba82a8/%EC%9E%90%EB%A3%8C/%EB%A9%94%EB%89%B4%EC%B0%BD.PNG  width="60%" height="60%"></a></div></td>
             <td width="33%">최신 보안 기술 적용</td>
         </tr>
         <tr>
