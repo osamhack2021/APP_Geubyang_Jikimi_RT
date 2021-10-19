@@ -35,14 +35,14 @@
 			</td>
 		</tr>
 		<tr>
-            <td rowspan="2"><div align="center"><https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/9c111bf3bf57051219f78a941f362031dcba82a8/%EC%9E%90%EB%A3%8C/%EB%A9%94%EB%89%B4%EC%B0%BD.PNG  width="60%" height="60%"></a></div></td>
+            <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/9c111bf3bf57051219f78a941f362031dcba82a8/%EC%9E%90%EB%A3%8C/%EB%A9%94%EB%89%B4%EC%B0%BD.PNG"  width="60%" height="60%"></a></div></td>
             <td width="33%">최신 보안 기술 적용</td>
         </tr>
         <tr>
             <td>다양한 상담 서비스 지원</td>
         </tr>
         <tr>
-            <td rowspan="2"><div align="center"><a href="https://raw.githubusercontent.com/osamhack2020/WEB_KookbangFriends_Woowahan/master/image/consulting2.jpg"><img src="/image/consulting2.jpg" width="60%" height="60%"></a></div></td>
+            <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/9c111bf3bf57051219f78a941f362031dcba82a8/%EC%9E%90%EB%A3%8C/%EB%A9%94%EB%89%B4%EC%B0%BD.PNG"><img src="/자료/메뉴창.PNG" width="60%" height="60%"></a></div></td>
            <td>전문상담관 선택 기능</td>
         </tr>
         <tr>
