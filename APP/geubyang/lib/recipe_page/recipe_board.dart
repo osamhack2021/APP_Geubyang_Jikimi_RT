@@ -11,7 +11,7 @@ class RecipeBoardPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(),
+        appBar: AppBar(title: const Text('레시피게시판'), ),
         body: ListView.separated(
           itemCount: 6,
           itemBuilder: (context, index) {

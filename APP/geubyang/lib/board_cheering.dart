@@ -9,7 +9,9 @@ class CheeringBoardPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(),
+        appBar: AppBar(
+          title: const Text('응원의 말'),
+        ),
         body: ListView.separated(
           itemCount: 6,
           itemBuilder: (context, index) {
