@@ -127,7 +127,7 @@
 		</tr>
 		<tr>
             <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/0f63ddeffab7130d64b7a8d43a458e5c010b4675/%EC%9E%90%EB%A3%8C/%EC%B0%BD%EA%B3%A0%EC%A0%95%EB%A6%AC.PNG"><img src="/자료/창고정리.PNG" width="60%" height="60%"></a></div></td>
-            <td width="33%">창고에 들어갈 물품 추가</td>
+            <td width="33%">부식 수령 후 창고에 들어갈 물품 추가</td>
 	</tr>
 	<tr>
 	</tr>
