@@ -104,6 +104,28 @@
             <td width="33%">국군 전 부대 취사병과 조리부사관의 ‘소통의 장’, 타 부대와 레시피를 공유가 가능</td>
         </tr>
 		
+<table>
+        <tbody>
+		<tr>
+			<td colspan=2>
+				<br>
+				<b>ㆍ 취사병들의 창고</b><br>
+				<br>
+			</td>
+		</tr>
+		<tr>
+            <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/0f63ddeffab7130d64b7a8d43a458e5c010b4675/%EC%9E%90%EB%A3%8C/%EC%B0%BD%EA%B3%A0%EC%A0%95%EB%A6%AC.PNG"><img src="/자료/.PNG" width="60%" height="60%"></a></div></td>
+            <td width="33%">창고에 들어갈 물품 추가</td>
+	</tr>
+	<tr>
+        </tr>
+	<tr>
+           <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/0f63ddeffab7130d64b7a8d43a458e5c010b4675/%EC%9E%90%EB%A3%8C/%EC%B0%BD%EA%B3%A0.PNG"><img src="/자료/창고.PNG" width="60%" height="60%"></a></div></td>
+           <td>창고정리완료</td>
+        </tr>
+   </tbody>
+</table>
+<br><br>
 
         
 |![Logo](자료/메뉴창.PNG) |앱 실행 후 메뉴창과 메인 화면을 통해, 장병들의 청결도를 높일 수 있습니다. 식중독과 같은 질병은, 사실 경각심이 잘 들지 않기 때문에, 앱을 통해 반복적인 경고를 하면 예방이 원활하게 될 것으로 예상합니다. 또한, 매일의 표준식단을 반강제적으로 보게 하여 장병들의 식단에 대한 이해도를 높일 수 있고, 특히 취사병들이 다음 끼니를 머릿속으로 구상하게 할 수 있습니다.|
