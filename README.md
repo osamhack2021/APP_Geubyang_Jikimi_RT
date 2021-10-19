@@ -171,13 +171,6 @@
 ## ⚫추가 전망
  **QR코드** 기능을 추가하여 수기로 작성하지 않고 부식에 있는 QR코드를 찍어 바로 창고정리가 가능하게 할 수 있습니다.
 
-잘 모를 경우
-구글 검색 - 마크다운 문법
-[https://post.naver.com/viewer/postView.nhn?volumeNo=24627214&memberNo=42458017](https://post.naver.com/viewer/postView.nhn?volumeNo=24627214&memberNo=42458017)
-
- 편한 마크다운 에디터를 찾아서 사용
- 샘플 에디터 [https://stackedit.io/app#](https://stackedit.io/app#)
- 
 ## 🙏팀 정보 (Team Information)
 |이름|이메일|Github Id|
 |:---:|:---:|:---:|
