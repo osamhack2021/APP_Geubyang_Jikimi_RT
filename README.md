@@ -30,7 +30,7 @@
 		<tr>
 			<td colspan=2>
 				<br>
-				<b>ㆍ 로그인 화면</b><br>
+				<b>ㆍ 📱로그인 화면</b><br>
 				<br>
 			</td>
 		</tr>
@@ -67,7 +67,7 @@
 		<tr>
 			<td colspan=2>
 				<br>
-				<b>ㆍ 급식만족도조사</b><br>
+				<b>ㆍ ✏급식만족도조사</b><br>
 				<br>
 			</td>
 		</tr>
@@ -81,7 +81,7 @@
 		<tr>
 			<td colspan=2>
 				<br>
-				<b>ㆍ 응원게시판</b><br>
+				<b>ㆍ 👊응원게시판</b><br>
 				<br>
 			</td>
 		</tr>
