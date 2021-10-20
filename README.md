@@ -66,7 +66,7 @@
            <td> < 표준식단표 ></td>
          </tr>
         <tr>
-            <td>-  조식, 중식, 석식을 확인 가능</td>
+            <td>-  매일 조식, 중식, 석식을 확인 가능</td>
         </tr>
 		  </tbody>
 </table>
@@ -77,15 +77,19 @@
 		<tr>
 			<td colspan=2>
 				<br>
-				<b>ㆍ ✏ 급식만족도조사</b><br>
+				<b>ㆍ ✏ 급식 만족도 조사</b><br>
 				<br>
 			</td>
 		</tr>
 		<tr>
             <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/113904670e644f8c8cc93a2a8ab6055b300f223e/%EC%9E%90%EB%A3%8C/%EB%A7%8C%EC%A1%B1%EB%8F%84%EC%A1%B0%EC%82%AC.PNG"><img src="/자료/만족도조사.PNG" width="60%" height="60%"></a></div></td>
-            <td width="33%">끼니 마다 할 수 있는 급식만족도조사</td>
+            <td width="33%">< 급식 만족도 조사 ></td>
+	 </tr>
+        <tr>
+            <td>- 매 끼니마다 급식 만족도 조사하여 급식의 질을 향상</td>
         </tr>
 		  </tbody>
+      
 </table>
 		
 <table>
