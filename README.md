@@ -1,7 +1,7 @@
 # 🔴팀 명🤸🏻‍♀️
 ### 🍚RT (Rice_Thieves) 밥도둑
 <p align="center">
-    <img src="./자료/팀로고.PNG" width="300" height="300" />
+    <img src="./자료/팀로고.PNG" width="900" height="300" />
     <br/>
 </p>
 
