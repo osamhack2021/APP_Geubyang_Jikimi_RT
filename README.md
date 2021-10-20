@@ -86,7 +86,7 @@
             <td width="33%">< 급식 만족도 조사 ></td>
 	 </tr>
         <tr>
-            <td> - 매 끼니마다 급식 만족도 조사하여 급식의 질을 향상</td>
+            <td> - 매 끼니마다 급식 만족도 조사하여 급식의 질을 향상식중독 지수 확인 및 손씻기 강조, 로그아웃, 창고정리</td>
         </tr>
 		  </tbody>
       
@@ -165,7 +165,10 @@
 		</tr>
 		<tr>
             <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/57f166e8d376ad9a8671cccfddc02700d6cb780a/%EC%9E%90%EB%A3%8C/%EB%A9%94%EB%89%B4%EC%B0%BD.PNG"><img src="/자료/메뉴창.PNG" width="60%" height="60%"></a></div></td>
-            <td width="33%">식중독 지수 확인 및 손씻기 강조, 로그아웃, 창고정리</td>
+            <td width="33%"> < 부가적인 요소 확인 가능한 곳 ></td>
+       </tr>
+        <tr>
+            <td> - 식중독 지수 확인 및 손씻기 강조, 로그아웃, 창고정리</td>
         </tr>
 		  </tbody>
 </table>
