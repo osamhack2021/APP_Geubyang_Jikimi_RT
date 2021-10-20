@@ -144,11 +144,11 @@
             <td width="33%">< 간편한 창고 정리 ></td>
 	</tr>
 	<tr>
-		<td> - 
+		<td> - 부식수령 후 손쉽게 창고 물품들을 작성 가능</td>
 	</tr>
 	<tr>
            <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/0f63ddeffab7130d64b7a8d43a458e5c010b4675/%EC%9E%90%EB%A3%8C/%EC%B0%BD%EA%B3%A0.PNG"><img src="/자료/창고.PNG" width="60%" height="60%"></a></div></td>
-           <td>창고정리완료</td>
+           <td> - 창고 정리완료</td>
         </tr>
    </tbody>
 	
