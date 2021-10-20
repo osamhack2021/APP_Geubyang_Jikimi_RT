@@ -37,7 +37,7 @@
 		</tr>
 		<tr>
             <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/537adb0173a1caef4a35584d8ad304476e9d0629/%EC%9E%90%EB%A3%8C/%EB%A9%94%EC%9D%B8%ED%99%94%EB%A9%B4.PNG"><img src="/자료/메인화면.PNG" width="60%" height="60%"></a></div></td>
-            <td width="33%"><앱 실행후 첫 화면></td>
+            <td width="33%">< 앱 실행후 첫 화면 ></td>
         </tr>
         <tr>
             <td>- 로그인 및 회원가입을 할 수 있는 곳</td>
@@ -56,16 +56,19 @@
 		</tr>
 		<tr>
             <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/537adb0173a1caef4a35584d8ad304476e9d0629/%EC%9E%90%EB%A3%8C/%EB%A9%94%EC%9D%B8%ED%99%94%EB%A9%B4.PNG"><img src="/자료/다음화면.PNG" width="60%" height="60%"></a></div></td>
-            <td width="33%"><앱의 메인화면></td>
+            <td width="33%">< 앱의 메인화면 ></td>
 	</tr>
 	<tr>
-		<td>달력 및 응원의 말, 레시피 게시판 아이콘</td>
+		<td> 달력 및 응원의 말, 레시피 게시판 아이콘</td>
         </tr>
 	<tr>
            <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/5b10a5d33eec83ee0644d1c3e726add3eb5c9964/%EC%9E%90%EB%A3%8C/%ED%91%9C%EC%A4%80%EC%8B%9D%EB%8B%A8.PNG"><img src="/자료/표준식단.PNG" width="60%" height="60%"></a></div></td>
-           <td>표준식단표에서 확인 가능한 오늘의 식단</td>
+           <td> < 표준식단표 ></td>
+         </tr>
+        <tr>
+            <td>-  조식, 중식, 석식을 확인 가능</td>
         </tr>
-   </tbody>
+		  </tbody>
 </table>
 <br><br>
 		
