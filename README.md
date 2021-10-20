@@ -204,11 +204,45 @@
 
 
 ## 👨‍👦‍👦팀 정보 (Team Information)
-|이름|이메일|Github Id|
-|:---:|:---:|:---:|
-|김동현|ehdgus1776@gmail.com|Github Id: ehdgus1776|
-|이강선|lks191225@gmail.com|Github Id: lks191225|
-|모지훈|morivy42@gmail.com|Github Id: morivy42|
+<table>
+ <tr>
+  <td align='center'>사진</td>
+  <td align='center'>계급</td>
+  <td align='center'>이름</td>
+  <td align='center'>역할</td>
+  <td align='center'>GitHub</td>
+  <td align='center'>E-Mail</td>
+ </tr>
+   
+ <tr>
+  <td align='center'><img src="image/1.png" width="50" height="50"></td>
+  <td align='center'>육군 상병</td>
+  <td align='center'>김동현</td>
+  <td align='center'>디자인<br>문서 작업<br>PPT작업</td>
+  <td align='center'><a href="https://github.com/ehdgus1776"><img src="http://img.shields.io/badge/ehdgus1776-green?style=social&logo=github"/></a></td>
+  <td align='center'><a href="mailto:ehdgus1776@gmail.com"><img src="https://img.shields.io/badge/ehdgus1776@gmail.com-green?logo=gmail&style=social"/></a></td>
+ </tr>
+
+ <tr>
+  <td align='center'><img src="image/2.png" width="50" height="50"></td>
+  <td align='center'>육군 상병</td>
+  <td align='center'>이강선</td>
+  <td align='center'>front-end<br>디자인<br>PPT작업</td>
+  <td align='center'><a href="https://github.com/Calvin1225"><img src="http://img.shields.io/badge/Calvin1225-green?style=social&logo=github"/></a></td>
+  <td align='center'><a href="mailto:lks191225@gmail.com"><img src="https://img.shields.io/badge/lks191225@gmail.com-green?logo=naver&style=social"/></a></td>
+ </tr>
+ 
+ <tr>
+  <td align='center'><img src="image/3.png" width="50" height="50"></td>
+  <td align='center'>육군 일병</td>
+  <td align='center'>모지훈</td>
+  <td align='center'>전체 총괄<br>영상 제작</td>
+  <td align='center'><a href="https://github.com/Morivy42"><img src="http://img.shields.io/badge/Morivy42-green?style=social&logo=github"/></a></td>
+  <td align='center'><a href="mailto:morivy42@gmail.com"><img src="https://img.shields.io/badge/morivy42@gmail.com-green?logo=naver&style=social"/></a></td>
+ </tr>
+</table>
+
+<br>
 
 ## ‼저작권 및 사용권 정보 (Copyleft / End User License)
  * [MIT](https://github.com/osam2020-WEB/Sample-ProjectName-TeamName/blob/master/license.md)
