@@ -50,47 +50,54 @@ class _DietTableMonthlyState extends State<DietTableMonthly> {
         child: ListView(
           padding: EdgeInsets.zero,
           children: <Widget>[
-            DrawerHeader(
-              decoration: const BoxDecoration(
-                color: Colors.blue,
-              ),
-              child: Column(
-                children: [
-                  Container(
-                    decoration: const BoxDecoration(
-                        image: DecorationImage(
-                      image: ExactAssetImage('assets/logo.PNG'),
-                    )),
-                  ),
-                  const Text(
-                    '급양 지키미',
-                    style: TextStyle(fontSize: 40),
-                  ),
-                  TextButton(
-                    onPressed: () {
-                      setState(() {
-                        launchBrowser("http://poisonmap.mfds.go.kr/");
-                      });
-                    },
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
-                        Icon(
-                          Icons.info,
-                          color: Colors.red,
-                        ),
-                        Text(
-                          '식중독 지수',
-                          style: TextStyle(color: Colors.white),
-                        ),
-                      ],
+            SizedBox(
+              height: 250,
+              child: DrawerHeader(
+                decoration: const BoxDecoration(
+                  color: Colors.blue,
+                ),
+                child: Column(
+                  children: [
+                    const Text(
+                      '급양 지키미',
+                      style: TextStyle(fontSize: 30, color: Colors.white),
                     ),
-                  ),
-                  const Text(
-                    '손씻기 생활화',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ],
+                    const SizedBox(height: 20,),
+                    Container(
+                      width: 200,
+                      height: 100,
+                      decoration: const BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage("assets/hand_wash.jpg"),
+                          fit: BoxFit.fitWidth,
+                        ),
+                        // shape: BoxShape.circle
+                      ),
+                    ),
+                    const SizedBox(height: 20,),
+                    TextButton(
+                      onPressed: () {
+                        setState(() {
+                          launchBrowser(
+                              "https://www.weather.go.kr/w/theme/daily-life/health-weather-index.do");
+                        });
+                      },
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Icon(
+                            Icons.food_bank,
+                            color: Colors.red,
+                          ),
+                          Text(
+                            '식중독 지수',
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
             ListTile(

@@ -73,6 +73,7 @@ flutter:
     - assets/data/sample.json
     - assets/data/diet_info_ATC_Oct.json
     - assets/logo.PNG
+    - assets/hand_wash.jpg
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

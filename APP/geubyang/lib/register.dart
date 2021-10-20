@@ -169,7 +169,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
           decoration: kBoxDecorationStyle,
           height: 60.0,
           child: const TextField(
-            obscureText: true,
             style: TextStyle(
               color: Colors.white,
               fontFamily: 'OpenSans',

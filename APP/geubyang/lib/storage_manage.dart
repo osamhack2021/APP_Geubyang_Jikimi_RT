@@ -76,28 +76,26 @@ class _StorageManageState extends State<StorageManage> {
                       onPressed: () async {
                         pDate = (await showDatePicker(
                           context: context,
-                          initialDate: DateTime.now(),
+                          initialDate: pDate,
                           firstDate: DateTime.utc(2015, 01, 01),
                           lastDate: DateTime.utc(2025, 12, 31),
                         ))!;
                       },
-                      child: Text('제조일자:' +
-                          DateFormat('yyyy-MM-dd').format(pDate)),
+                      child: Text(
+                          '제조일자:' + DateFormat('yyyy-MM-dd').format(pDate)),
                     ),
                     TextButton(
                       onPressed: () async {
                         eDate = (await showDatePicker(
                           context: context,
-                          initialDate: DateTime.now(),
+                          initialDate: eDate,
                           firstDate: DateTime.utc(2015, 01, 01),
                           lastDate: DateTime.utc(2025, 12, 31),
                         ))!;
-                        setState(() {
-                          
-                        });
+                        setState(() {});
                       },
-                      child: Text('유통기한:' +
-                          DateFormat('yyyy-MM-dd').format(eDate)),
+                      child: Text(
+                          '유통기한:' + DateFormat('yyyy-MM-dd').format(eDate)),
                     ),
                     TextField(
                         controller: qController,
