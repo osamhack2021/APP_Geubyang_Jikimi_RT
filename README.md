@@ -44,7 +44,7 @@
 		</tr>
 		<tr>
             <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/537adb0173a1caef4a35584d8ad304476e9d0629/%EC%9E%90%EB%A3%8C/%EB%A9%94%EC%9D%B8%ED%99%94%EB%A9%B4.PNG"><img src="/자료/메인화면.PNG" width="60%" height="60%"></a></div></td>
-            <td width="33%">< 앱 실행 후 첫 화면 ></td>
+            <td width="33%" align="center">< 앱 실행 후 첫 화면 ></td>
         </tr>
         <tr>
             <td> - 로그인 및 회원가입을 할 수 있는 곳</td>
@@ -63,14 +63,14 @@
 		</tr>
 		<tr>
             <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/537adb0173a1caef4a35584d8ad304476e9d0629/%EC%9E%90%EB%A3%8C/%EB%A9%94%EC%9D%B8%ED%99%94%EB%A9%B4.PNG"><img src="/자료/다음화면.PNG" width="60%" height="60%"></a></div></td>
-            <td width="33%">< 앱의 메인화면 ></td>
+            <td width="33%" align="center">< 앱의 메인화면 ></td>
 	</tr>
 	<tr>
 		<td> - 달력 및 응원의 말, 레시피 게시판 아이콘</td>
         </tr>
 	<tr>
            <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/5b10a5d33eec83ee0644d1c3e726add3eb5c9964/%EC%9E%90%EB%A3%8C/%ED%91%9C%EC%A4%80%EC%8B%9D%EB%8B%A8.PNG"><img src="/자료/표준식단.PNG" width="60%" height="60%"></a></div></td>
-           <td> < 표준식단표 ></td>
+           <td align="center"> < 표준식단표 ></td>
          </tr>
         <tr>
             <td> - 매일 조식, 중식, 석식을 확인 가능</td>
@@ -90,7 +90,7 @@
 		</tr>
 		<tr>
             <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/113904670e644f8c8cc93a2a8ab6055b300f223e/%EC%9E%90%EB%A3%8C/%EB%A7%8C%EC%A1%B1%EB%8F%84%EC%A1%B0%EC%82%AC.PNG"><img src="/자료/만족도조사.PNG" width="60%" height="60%"></a></div></td>
-            <td width="33%">< 급식 만족도 조사 ></td>
+            <td width="33%" align="center">< 급식 만족도 조사 ></td>
 	 </tr>
         <tr>
             <td> - 매 끼니마다 급식 만족도 조사하여 급식의 질을 향상</td>
@@ -110,7 +110,7 @@
 		</tr>
 		<tr>
             <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/1fc64a57e504f198ea49800ac1e25a72228aaea0/%EC%9E%90%EB%A3%8C/%EC%9D%91%EC%9B%90%EC%9D%98%EB%A7%90.PNG"><img src="/자료/응원의말.PNG" width="60%" height="60%"></a></div></td>
-            <td width="33%">< 취사병에게 따뜻한 말 한마디 ></td>
+            <td width="33%" align="center">< 취사병에게 따뜻한 말 한마디 ></td>
         </tr>
         <tr>
             <td> - 응원의 공간을 만들어 취사병들의 마음을 다독여 줄 수 있으며, 마음의 짐을 덜어주는 효과</td>
@@ -129,7 +129,7 @@
 		</tr>
 		<tr>
             <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/f0a5e47d0b196b4e6079a609b28fbd59f68ff715/%EC%9E%90%EB%A3%8C/%EB%A0%88%EC%8B%9C%ED%94%BC.PNG"><img src="/자료/레시피.PNG" width="60%" height="60%"></a></div></td>
-            <td width="33%"><취사병과 조리부사관의 ‘소통의 장’></td>
+            <td width="33%" align="center"><취사병과 조리부사관의 ‘소통의 장’></td>
         </tr>
         <tr>
             <td> - 타 부대와 레시피 공유하여 급식의 맛을 높이는 효과</td>
@@ -148,7 +148,7 @@
 		</tr>
 		<tr>
             <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/0f63ddeffab7130d64b7a8d43a458e5c010b4675/%EC%9E%90%EB%A3%8C/%EC%B0%BD%EA%B3%A0%EC%A0%95%EB%A6%AC.PNG"><img src="/자료/창고정리.PNG" width="60%" height="60%"></a></div></td>
-            <td width="33%">< 간편한 창고 정리 ></td>
+            <td width="33%" align="center">< 간편한 창고 정리 ></td>
 	</tr>
 	<tr>
 		<td> - 부식 수령 후 손쉽게 창고 물품들을 작성 가능</td>
@@ -172,7 +172,7 @@
 		</tr>
 		<tr>
             <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/9e98f8c851c691bcd7e2aeb013d9c2b1116be98f/%EC%9E%90%EB%A3%8C/%EC%A7%84%EC%A7%9C%EB%A9%94%EB%89%B4%EC%B0%BD.PNG"><img src="/자료/진짜메뉴창.PNG" width="60%" height="60%"></a></div></td>
-            <td width="33%"> < 부가적인 요소 확인 가능한 곳 ></td>
+            <td width="33%" align="center" > < 부가적인 요소 확인 가능한 곳 ></td>
        </tr>
         <tr>
             <td> - 식중독 지수 확인 및 손씻기 강조, 로그아웃, 창고정리</td>
