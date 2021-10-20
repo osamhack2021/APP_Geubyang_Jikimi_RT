@@ -215,7 +215,7 @@
  </tr>
    
  <tr>
-  <td align='center'><img src="image/1.png" width="50" height="50"></td>
+  <td align='center'><img src="자료/동현.jpg" width="50" height="50"></td>
   <td align='center'>육군 상병</td>
   <td align='center'>김동현</td>
   <td align='center'>디자인<br>문서 작업<br>PPT작업</td>
@@ -224,7 +224,7 @@
  </tr>
 
  <tr>
-  <td align='center'><img src="image/2.png" width="50" height="50"></td>
+  <td align='center'><img src="자료/이강선.jpg" width="50" height="50"></td>
   <td align='center'>육군 상병</td>
   <td align='center'>이강선</td>
   <td align='center'>Front-end<br>디자인<br>PPT작업</td>
@@ -233,7 +233,7 @@
  </tr>
  
  <tr>
-  <td align='center'><img src="image/3.png" width="50" height="50"></td>
+  <td align='center'><img src="자료/지훈.jpg" width="50" height="50"></td>
   <td align='center'>육군 일병</td>
   <td align='center'>모지훈</td>
   <td align='center'>전체 총괄<br>Front-end<br>영상 제작</td>
