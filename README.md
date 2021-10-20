@@ -93,7 +93,7 @@
             <td width="33%">< 급식 만족도 조사 ></td>
 	 </tr>
         <tr>
-            <td> - 매 끼니마다 급식 만족도 조사하여 급식의 질을 향상식중독 지수 확인 및 손씻기 강조, 로그아웃, 창고정리</td>
+            <td> - 매 끼니마다 급식 만족도 조사하여 급식의 질을 향상</td>
         </tr>
 		  </tbody>
       
@@ -110,7 +110,7 @@
 		</tr>
 		<tr>
             <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/1fc64a57e504f198ea49800ac1e25a72228aaea0/%EC%9E%90%EB%A3%8C/%EC%9D%91%EC%9B%90%EC%9D%98%EB%A7%90.PNG"><img src="/자료/응원의말.PNG" width="60%" height="60%"></a></div></td>
-            <td width="33%"><고생하는 취사병들에게 따뜻한 말 한마디 건네는 게시판></td>
+            <td width="33%"><취사병 응원 게시판></td>
         </tr>
         <tr>
             <td> - 응원의 공간을 만들어 취사병들의 마음을 다독여 줄 수 있으며, 마음의 짐을 덜어주는 효과</td>
@@ -129,7 +129,7 @@
 		</tr>
 		<tr>
             <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/f0a5e47d0b196b4e6079a609b28fbd59f68ff715/%EC%9E%90%EB%A3%8C/%EB%A0%88%EC%8B%9C%ED%94%BC.PNG"><img src="/자료/레시피.PNG" width="60%" height="60%"></a></div></td>
-            <td width="33%"><국군 전 부대 취사병과 조리부사관의 ‘소통의 장’></td>
+            <td width="33%"><취사병과 조리부사관의 ‘소통의 장’></td>
         </tr>
         <tr>
             <td> - 타 부대와 레시피를 공유가능</td>
