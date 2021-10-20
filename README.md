@@ -235,7 +235,7 @@ $ flutter run (등록된 기기로 실행)
 /// 배포용 빌드
 $ flutter build apk
 
-</br>
+```
  
 ## 👨‍👦‍👦팀 정보 (Team Information)
 <table>
