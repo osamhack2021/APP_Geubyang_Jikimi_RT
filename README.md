@@ -31,7 +31,7 @@
 		<tr>
 			<td colspan=2>
 				<br>
-				<b>ㆍ 📱로그인 화면</b><br>
+				<b>ㆍ 📱 로그인 화면</b><br>
 				<br>
 			</td>
 		</tr>
@@ -50,7 +50,7 @@
 		<tr>
 			<td colspan=2>
 				<br>
-				<b>ㆍ 💡메인화면 기능</b><br>
+				<b>ㆍ 💡 메인화면 기능</b><br>
 				<br>
 			</td>
 		</tr>
@@ -74,7 +74,7 @@
 		<tr>
 			<td colspan=2>
 				<br>
-				<b>ㆍ ✏급식만족도조사</b><br>
+				<b>ㆍ ✏ 급식만족도조사</b><br>
 				<br>
 			</td>
 		</tr>
@@ -90,7 +90,7 @@
 		<tr>
 			<td colspan=2>
 				<br>
-				<b>ㆍ 👊응원게시판</b><br>
+				<b>ㆍ 👊 응원게시판</b><br>
 				<br>
 			</td>
 		</tr>
@@ -109,7 +109,7 @@
 		<tr>
 			<td colspan=2>
 				<br>
-				<b>ㆍ 📃레시피공유</b><br>
+				<b>ㆍ 📃 레시피공유</b><br>
 				<br>
 			</td>
 		</tr>
@@ -128,7 +128,7 @@
 		<tr>
 			<td colspan=2>
 				<br>
-				<b>ㆍ 📦취사병들의 창고</b><br>
+				<b>ㆍ 📦 취사병들의 창고</b><br>
 				<br>
 			</td>
 		</tr>
@@ -151,7 +151,7 @@
 		<tr>
 			<td colspan=2>
 				<br>
-				<b>ㆍ 🔔메뉴창</b><br>
+				<b>ㆍ 🔔 메뉴창</b><br>
 				<br>
 			</td>
 		</tr>
