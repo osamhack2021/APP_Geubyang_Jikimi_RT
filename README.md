@@ -40,7 +40,7 @@
             <td width="33%">< 앱 실행후 첫 화면 ></td>
         </tr>
         <tr>
-            <td>- 로그인 및 회원가입을 할 수 있는 곳</td>
+            <td> - 로그인 및 회원가입을 할 수 있는 곳</td>
         </tr>
 		  </tbody>
 </table>
@@ -59,14 +59,14 @@
             <td width="33%">< 앱의 메인화면 ></td>
 	</tr>
 	<tr>
-		<td> 달력 및 응원의 말, 레시피 게시판 아이콘</td>
+		<td> - 달력 및 응원의 말, 레시피 게시판 아이콘</td>
         </tr>
 	<tr>
            <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/5b10a5d33eec83ee0644d1c3e726add3eb5c9964/%EC%9E%90%EB%A3%8C/%ED%91%9C%EC%A4%80%EC%8B%9D%EB%8B%A8.PNG"><img src="/자료/표준식단.PNG" width="60%" height="60%"></a></div></td>
            <td> < 표준식단표 ></td>
          </tr>
         <tr>
-            <td>-  매일 조식, 중식, 석식을 확인 가능</td>
+            <td> - 매일 조식, 중식, 석식을 확인 가능</td>
         </tr>
 		  </tbody>
 </table>
@@ -86,7 +86,7 @@
             <td width="33%">< 급식 만족도 조사 ></td>
 	 </tr>
         <tr>
-            <td>- 매 끼니마다 급식 만족도 조사하여 급식의 질을 향상</td>
+            <td> - 매 끼니마다 급식 만족도 조사하여 급식의 질을 향상</td>
         </tr>
 		  </tbody>
       
@@ -106,7 +106,7 @@
             <td width="33%"><고생하는 취사병들에게 따뜻한 말 한마디 건네는 게시판></td>
         </tr>
         <tr>
-            <td>- 응원의 공간을 만들어 취사병들의 마음을 다독여 줄 수 있으며, 마음의 짐을 덜어주는 효과</td>
+            <td> - 응원의 공간을 만들어 취사병들의 마음을 다독여 줄 수 있으며, 마음의 짐을 덜어주는 효과</td>
         </tr>
 		  </tbody>
 </table>
@@ -125,7 +125,7 @@
             <td width="33%"><국군 전 부대 취사병과 조리부사관의 ‘소통의 장’></td>
         </tr>
         <tr>
-            <td>- 타 부대와 레시피를 공유가능</td>
+            <td> - 타 부대와 레시피를 공유가능</td>
         </tr>
 		  </tbody>
 </table>
@@ -141,9 +141,10 @@
 		</tr>
 		<tr>
             <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/0f63ddeffab7130d64b7a8d43a458e5c010b4675/%EC%9E%90%EB%A3%8C/%EC%B0%BD%EA%B3%A0%EC%A0%95%EB%A6%AC.PNG"><img src="/자료/창고정리.PNG" width="60%" height="60%"></a></div></td>
-            <td width="33%">부식 수령 후 창고에 들어갈 물품 추가</td>
+            <td width="33%">< 간편한 창고 정리 ></td>
 	</tr>
 	<tr>
+		<td> - 
 	</tr>
 	<tr>
            <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/0f63ddeffab7130d64b7a8d43a458e5c010b4675/%EC%9E%90%EB%A3%8C/%EC%B0%BD%EA%B3%A0.PNG"><img src="/자료/창고.PNG" width="60%" height="60%"></a></div></td>
