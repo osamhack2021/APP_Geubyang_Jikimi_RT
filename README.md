@@ -1,6 +1,9 @@
 # 🔴팀 명🤸🏻‍♀️
 ### 🍚RT (Rice_Thieves) 밥도둑
-![Logo](자료/팀로고.PNG)
+<p align="center">
+    <img src="./자료/팀로고.PNG" width="300" height="300" />
+    <br/>
+</p>
 
 # 🟠프로젝트명🗂
 ### 🍱급양지키미(Geubyang_Jikimi)
