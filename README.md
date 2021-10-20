@@ -207,9 +207,9 @@
 
  ### 테스트 방법
  
- cd /APP/geubyang
+ㆍ  cd /APP/geubyang
  
- flutter run -d web-server --web-hostname=0.0.0.0
+ㆍ  flutter run -d web-server --web-hostname=0.0.0.0
  
 ## 👨‍👦‍👦팀 정보 (Team Information)
 <table>
