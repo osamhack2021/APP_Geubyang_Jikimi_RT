@@ -40,6 +40,10 @@
 **6. 응원의 말** => 일찍 일어나 고생하는 취사병을 위해 응원의 한마디를 적을 수 있는 공간을 마련합니다.
 
 
+## ⏯️시연영상 📹
+<iframe width="1237" height="696" src="https://www.youtube.com/embed/Oh2-_k46XTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+https://youtu.be/Oh2-_k46XTo
+
 ## 🔵기능 설명📖
 <table>
         <tbody>
