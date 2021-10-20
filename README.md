@@ -56,9 +56,10 @@
 		</tr>
 		<tr>
             <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/537adb0173a1caef4a35584d8ad304476e9d0629/%EC%9E%90%EB%A3%8C/%EB%A9%94%EC%9D%B8%ED%99%94%EB%A9%B4.PNG"><img src="/자료/다음화면.PNG" width="60%" height="60%"></a></div></td>
-            <td width="33%">앱의 메인화면, 응원의 말 및 레시피 게시판 </td>
+            <td width="33%"><앱의 메인화면></td>
 	</tr>
 	<tr>
+		<td>달력 및 응원의 말, 레시피 게시판 아이콘</td>
         </tr>
 	<tr>
            <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/5b10a5d33eec83ee0644d1c3e726add3eb5c9964/%EC%9E%90%EB%A3%8C/%ED%91%9C%EC%A4%80%EC%8B%9D%EB%8B%A8.PNG"><img src="/자료/표준식단.PNG" width="60%" height="60%"></a></div></td>
