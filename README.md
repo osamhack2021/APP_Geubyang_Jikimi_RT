@@ -41,9 +41,9 @@
 
 
 ## ⏯️시연영상 📹
-<iframe width="640" height="360" src="https://www.youtube.com/embed/Oh2-_k46XTo" frameborder="0" gesture="media" allowfullscreen=""></iframe>
+이미지를 클릭하면 영상으로 연결됩니다!https://youtu.be/Oh2-_k46XTo
 
-https://youtu.be/Oh2-_k46XTo
+[![급양지키미시연영상](https://img.youtube.com/vi/Oh2-_k46XTo/0.jpg)](https://youtu.be/Oh2-_k46XTo) 
 
 ## 🔵기능 설명📖
 <table>
