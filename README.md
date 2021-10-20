@@ -233,7 +233,7 @@
  </tr>
  
  <tr>
-  <td align='center'><img src="자료/지훈.jpg" width="50" height="50"></td>
+  <td align='center'><img src="자료/모지훈.jpg" width="50" height="50"></td>
   <td align='center'>육군 일병</td>
   <td align='center'>모지훈</td>
   <td align='center'>전체 총괄<br>Front-end<br>영상 제작</td>
