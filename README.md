@@ -171,7 +171,7 @@
 			</td>
 		</tr>
 		<tr>
-            <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/57f166e8d376ad9a8671cccfddc02700d6cb780a/%EC%9E%90%EB%A3%8C/%EB%A9%94%EB%89%B4%EC%B0%BD.PNG"><img src="/자료/메뉴창.PNG" width="60%" height="60%"></a></div></td>
+            <td rowspan="2"><div align="center"><a href="https://github.com/osamhack2021/APP_Geubyang_Jikimi_RT/blob/9e98f8c851c691bcd7e2aeb013d9c2b1116be98f/%EC%9E%90%EB%A3%8C/%EC%A7%84%EC%A7%9C%EB%A9%94%EB%89%B4%EC%B0%BD.PNG"><img src="/자료/진짜메뉴창.PNG" width="60%" height="60%"></a></div></td>
             <td width="33%"> < 부가적인 요소 확인 가능한 곳 ></td>
        </tr>
         <tr>
