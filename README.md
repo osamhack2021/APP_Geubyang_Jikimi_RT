@@ -200,7 +200,9 @@
 ## 🟤설치 안내
  
  테스트 방법
+ 
  cd /APP/geubyang
+ 
  flutter run -d web-server --web-hostname=0.0.0.0
  
 ## 👨‍👦‍👦팀 정보 (Team Information)
