@@ -227,7 +227,7 @@
   <td align='center'><img src="image/2.png" width="50" height="50"></td>
   <td align='center'>육군 상병</td>
   <td align='center'>이강선</td>
-  <td align='center'>front-end<br>디자인<br>PPT작업</td>
+  <td align='center'>Front-end<br>디자인<br>PPT작업</td>
   <td align='center'><a href="https://github.com/Calvin1225"><img src="http://img.shields.io/badge/Calvin1225-green?style=social&logo=github"/></a></td>
   <td align='center'><a href="mailto:lks191225@gmail.com"><img src="https://img.shields.io/badge/lks191225@gmail.com-green?logo=gmail&style=social"/></a></td>
  </tr>
@@ -236,7 +236,7 @@
   <td align='center'><img src="image/3.png" width="50" height="50"></td>
   <td align='center'>육군 일병</td>
   <td align='center'>모지훈</td>
-  <td align='center'>전체 총괄<br>영상 제작</td>
+  <td align='center'>전체 총괄<br>Front-end<br>영상 제작</td>
   <td align='center'><a href="https://github.com/Morivy42"><img src="http://img.shields.io/badge/Morivy42-green?style=social&logo=github"/></a></td>
   <td align='center'><a href="mailto:morivy42@gmail.com"><img src="https://img.shields.io/badge/morivy42@gmail.com-green?logo=gmail&style=social"/></a></td>
  </tr>
