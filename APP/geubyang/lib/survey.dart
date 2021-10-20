@@ -35,58 +35,60 @@ class _DietSurveyState extends State<DietSurvey> {
             const SizedBox(
               height: 30,
             ),
-            Row(children: [
-              Radio(
-                value: SATISFACTION.veryBad,
-                groupValue: _satisfaction,
-                onChanged: (value) {
-                  setState(() {
-                    _satisfaction = SATISFACTION.veryBad;
-                  });
-                },
-              ),
-              const Text('매우 나쁨'),
-              Radio(
-                value: SATISFACTION.bad,
-                groupValue: _satisfaction,
-                onChanged: (value) {
-                  setState(() {
-                    _satisfaction = SATISFACTION.bad;
-                  });
-                },
-              ),
-              const Text('나쁨'),
-              Radio(
-                value: SATISFACTION.fair,
-                groupValue: _satisfaction,
-                onChanged: (value) {
-                  setState(() {
-                    _satisfaction = SATISFACTION.fair;
-                  });
-                },
-              ),
-              const Text('보통'),
-              Radio(
-                value: SATISFACTION.good,
-                groupValue: _satisfaction,
-                onChanged: (value) {
-                  setState(() {
-                    _satisfaction = SATISFACTION.good;
-                  });
-                },
-              ),
-              const Text('좋음'),
-              Radio(
-                value: SATISFACTION.veryGood,
-                groupValue: _satisfaction,
-                onChanged: (value) {
-                  setState(() {
-                    _satisfaction = SATISFACTION.veryGood;
-                  });
-                },
-              ),
-              const Text('매우 좋음'),
-            ]),
+            SingleChildScrollView(
+              child: Row(children: [
+                Radio(
+                  value: SATISFACTION.veryBad,
+                  groupValue: _satisfaction,
+                  onChanged: (value) {
+                    setState(() {
+                      _satisfaction = SATISFACTION.veryBad;
+                    });
+                  },
+                ),
+                const Text('매우 나쁨'),
+                Radio(
+                  value: SATISFACTION.bad,
+                  groupValue: _satisfaction,
+                  onChanged: (value) {
+                    setState(() {
+                      _satisfaction = SATISFACTION.bad;
+                    });
+                  },
+                ),
+                const Text('나쁨'),
+                Radio(
+                  value: SATISFACTION.fair,
+                  groupValue: _satisfaction,
+                  onChanged: (value) {
+                    setState(() {
+                      _satisfaction = SATISFACTION.fair;
+                    });
+                  },
+                ),
+                const Text('보통'),
+                Radio(
+                  value: SATISFACTION.good,
+                  groupValue: _satisfaction,
+                  onChanged: (value) {
+                    setState(() {
+                      _satisfaction = SATISFACTION.good;
+                    });
+                  },
+                ),
+                const Text('좋음'),
+                Radio(
+                  value: SATISFACTION.veryGood,
+                  groupValue: _satisfaction,
+                  onChanged: (value) {
+                    setState(() {
+                      _satisfaction = SATISFACTION.veryGood;
+                    });
+                  },
+                ),
+                const Text('매우 좋음'),
+              ]),
+            ),
             const SizedBox(
               height: 10,
             ),
