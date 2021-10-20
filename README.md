@@ -41,7 +41,8 @@
 
 
 ## ⏯️시연영상 📹
-<iframe width="1237" height="696" src="https://www.youtube.com/embed/Oh2-_k46XTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/Oh2-_k46XTo" frameborder="0" gesture="media" allowfullscreen=""></iframe>
+
 https://youtu.be/Oh2-_k46XTo
 
 ## 🔵기능 설명📖
